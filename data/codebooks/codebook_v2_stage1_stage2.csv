@@ -1,0 +1,70 @@
+Theme,Code,Definition,Examples
+Musical Taste & Influence,GENRE_PREFERENCE,Mentions favorite genres or subgenres. Specific mentions in ().,"“Lately, definitely more metalcore, deathcore, post-hardcore.”"
+Musical Taste & Influence,GATEWAY_BAND,Names a band/artist that functioned as an entry point to heavier styles or techniques.,“Slipknot was a gateway band for metalcore and deathcore.”
+Musical Taste & Influence,NON_METAL_TASTE,"Talks about liking pop, hip-hop, R&B, etc. Specific mentions in ()",“I love pop — from Michael Jackson to Charlie Puth.”
+Musical Taste & Influence,CHILDHOOD_INFLUENCE,References early family or childhood exposure to music.,"“Definitely from my dad, listening to old rock and roll.”"
+Musical Taste & Influence,BAND_INFLUENCE,Mentions influential bands shaping their sound. Specific mentions in ().,"“Green Day, Slipknot, Bring Me the Horizon.”"
+Musical Taste & Influence,CULTURAL_INFLUENCE,"Mentions regional, generational, or cultural factors shaping style.",“2000s hip-hop is nostalgic for me — that’s what I grew up with.”
+Musical Taste & Influence,VOCALIST_INFLUENCE,Mentions a specific vocalists who shaped their style. Specific mentions in ().,"“Tom Barber (Chelsea Grin, Darko US) has influenced me a lot.”"
+Musical Taste & Influence,INFLUENCE_DIVERSITY,Shows contrast of influences from different genres.,“Randy Blythe and Alicia Keys — both inspire me in different ways.”
+Musical Taste & Influence,EMOTIONAL_CONNECTION,Links musical taste to emotion or identity.,“Emo… it’s emotional. You can talk about things you’re not talking about with everyone.”
+Musical Taste & Influence,AUTHENTICITY_IN_TASTE,Critiques mainstream / prefers genuine sound.,“I want to be genuine and authentic and new — not regurgitated metal.”
+Musical Background,INSTRUMENTAL_SKILL,Plays or has tried to learn instruments.,"“I’ve tried to learn guitar and bass, but I focus on vocals.”"
+Musical Background,CHOIR_BACKGROUND,"Mentions choir, ensemble, or formal singing group.",“I was in honors choir in high school.”
+Musical Background,COMPOSITION_PROCESS,"Talks about songwriting, lyric-writing, or creative process.","“I listen, visualize the song, then start humming and adding words.”"
+Musical Background,BAND_MEMBERSHIP,Mentions current or previous bands.,“My band is called Don’t Shoot the Messenger.”
+Musical Background,LOCAL_SCENE,References being part of a local music community.,“We’ve all known each other from the Atlanta scene and help each other out.”
+Musical Background,STUDIO_EXPERIENCE,"Mentions studio work, recording, or comfort in studio.",“Feels like being a rock star — my first studio recording in 2019.”
+Musical Background,LIVE_PERFORMANCE,"Talks about performing live, gigs, audience interaction.",“We try to do one show a month — different cities.”
+Musical Background,STAGE_VS_STUDIO,Describes differences between live and studio performance.,“On stage it’s easy to snap into the moment; in studio I have to flip the switch.”
+Musical Background,CREATIVE_AUTONOMY,"Mentions writing, producing, or doing multiple roles alone.","“I’m writing everything myself, bringing on others to help later.”"
+Education,SELF_TAUGHT,"Participant learned instruments or vocals independently, without formal instruction.",“Completely self-taught in terms of instruments and vocals.”
+Education,PEER_LEARNING,"Learned from bandmates, friends, or other musicians.",“My buddy Alan taught me gutturals.”
+Education,ONLINE_LEARNING,Used online materials,“I watched a lot of Melissa Cross.”
+Education,EARLY_EXPERIMENTATION,Early attempts before formal practice; first tries that later shaped approach.,"“I was trying to scream back in 2008, long before I knew what I was doing.”"
+Education,REAL_LESSON,"Mentions any formal in-person classes (vocal lessons, instrument lessons) taken, no matter the length","""So I was trained by my choir teacher—she does private lessons and stuff like that—when I was younger, all the way through high school, for classical singing."""
+Education,EXPERT_TRAINING,"Mentions taking classes from EMVT professionals like Extreme Vocal Institute, or degree in vocals","""I also did lessons online with a guy who runs the Extreme Vocal Institute—David. He really helped me hone in on screaming, going back, relearning my basics, learning the anatomy of everything—just to figure out what I'm doing without hurting myself."""
+Vocal Technique & Style,FRY_TECHNIQUE,Mentions or describes using high fry screams or distortion.,"“When I want to enunciate a point, high fry is good.”"
+Vocal Technique & Style,GROWL_TECHNIQUE,"Mentions low/mid growls, gutturals, or false-cord use.",“My lows sound more like mids since I’m a baritone.”
+Vocal Technique & Style,FALSE_CORD,Mentions using false cord technique,
+Vocal Technique & Style,HYBRID_TECHNIQUE,"Mentions combining multiple vocal modes (clean + scream, etc.).",“I like catchy pop hooks and breakdowns with screaming.”
+Vocal Technique & Style,YELLING_STYLE,References punk/hardcore  or yelling-style vocals ,"“I like the way punk does it — yelling, passionate but not forced.”"
+Vocal Technique & Style,SCREAMING_TECHNIQUE,General mentions of screaming as a technique (without specifying fry/false cord).,“I started learning to scream when I was 10 years old.”
+Vocal Technique & Style,HIGH_SCREAM_STYLE,"Talks about high-pitched or fry-based screaming (piercing, emotional tone).","“When I want to enunciate a point, high fry is good.”"
+Vocal Technique & Style,MID_SCREAM_STYLE,"Mentions mid-range screams (often baritone range, metalcore style).",“Some people say my lows sound more like mids — that’s my natural tone.”
+Vocal Technique & Style,VOCAL_STYLE_SELF_DESC,"Participant explicitly describes their overall vocal style/identity (aesthetic, vibe, era blend, scene tag), not specific techniques.",“I would say I have a late-90s fusion with mid-2010s fusion vocal.”
+Vocal Technique & Style,TONGUE_TECHNIQUE,Mentions using tongue in their technique for additional distortion/effects,I really like involving tongue techniques into my vocal styles too
+Vocal Technique & Style,ERA_BLEND_STYLE,"Style framed as a mix of specific eras/scenes (e.g., ‘2013 metalcore + 1999 nu metal’).","“My style is that 2013 era mixed with 1999 nu metal — Slipknot, System of a Down, Korn.”"
+Vocal Health,VOCAL_HEALTH,"Mentions hydration, rest, avoiding strain, or medical issues.","“Number one: drink water… not just the day of, but the day before.”"
+Vocal Health,TRIAL_ERROR,"Describes experimentation, failure, injury, or figuring out by trial.",“I tried to scream in 8th grade and hurt my voice.”
+Vocal Health,WARMUP_ROUTINE,"Mentions warm-ups, breathing, physical exercises, or routines.",“I used old choir warmups like do-re-mi-fa-so-la-ti-da.”
+Vocal Health,PREVENTION_STRATEGIES,"Mentions specific behaviors aimed at preventing strain or damage (food/drink avoidance, pacing, technique adjustments, avoiding force).","“Avoid acidic foods and drinks, don’t overeat before vocals, never force it if it doesn’t feel ready.”"
+Vocal Health,INJURY_EVENT,"Explicit mention of pain, strain, blown voice, or medical consequence from practice/performance.","“I blew my voice out in 8th grade; it hurt, so I stopped.”"
+Perception & Intelligibility,EXTREME_VOCALS_DEFINITION,"How participant defines or describes what counts as ""extreme vocals"" and particular techniques",“Extreme vocals are not just aggression — they’re about expression and structure.”
+Perception & Intelligibility,PERCEPTUAL_CLASS_SCREAMLIKE,Talks about screaming and techniques that sound like screaming,
+Perception & Intelligibility,PERCEPTUAL_CLASS_GROWLLIKE,Talks about growling and techniques that sound like growling,
+Perception & Intelligibility,PERCEPTUAL_CLASS_HYBRID,Talks about hybrid techniques/hardcore scream,
+Perception & Intelligibility,PERCEPTION_MISUNDERSTOOD,"Notes that outsiders misjudge extreme vocals (noise, anger, etc.)",“People think screaming is just yelling — they don’t get the emotion behind it.”
+Perception & Intelligibility,EXPERTISE_DECODING,Mentions how perception changes with experience or exposure.,"“At first it sounds chaotic, but then you start to recognize words.”"
+Perception & Intelligibility,MESSAGE_IMPORTANCE,"Stresses lyrical meaning, substance, message delivery.",“Many bands just want to sound cool; I want songs with a message.”
+Perception & Intelligibility,AUDITORY_COMPLEXITY,"Talks about richness, texture, or timbral layering of screams/growls.",“There’s a lot happening — different layers in the voice.”
+Perception & Intelligibility,CULTURAL_PERCEPTION,Comments on social or generational factors shaping how screaming is perceived.,“Some people link yelling to childhood or anger — it’s cultural.”
+Perception & Intelligibility,INTELLIGIBILITY_IMPORTANT,Emphasizes clear articulation and understanding of lyrics.,“I try to articulate my screams so you can hear the words.”
+Perception & Intelligibility,INTELLIGIBILITY_NOT_IMPORTANT,Says clarity isn’t crucial; prioritizes emotion or texture.,“It doesn’t matter if you understand the words — it’s about the feeling.”
+Perception & Intelligibility,MESSAGE_SUBSTANCE,Ties intelligibility to lyrical meaning or message transmission.,“You’ve got to have something to say — not just sound cool.”
+Perception & Intelligibility,AUDIENCE_UNDERSTANDING,Talks about how listeners perceive or decode the lyrics.,"“If they’re not used to it, they can’t understand; you have to train your ear.”"
+Perception & Intelligibility,ARTICULATION_TECHNIQUE,"Mentions enunciation strategies — mouth shape, breath, timing.",“I focus on pronunciation even in fry screams.”
+Melody & Rhythm,MELODY_IMPORTANT,Highlights melodic line or structure even in harsh vocals.,“There’s got to be a melody in there somewhere.”
+Melody & Rhythm,RHYTHM_IMPORTANT,"Mentions timing, phrasing, sync with drums/guitars.","“I fill in dips with the drums, find my sweet spot.”"
+Melody & Rhythm,MELODIC_HYBRIDITY,Talks about blending clean and harsh vocals for melodic contrast.,“Deathcore vocals then clean singing — that’s where melody shines.”
+Melody & Rhythm,TEMPO_DYNAMICS,References pace or rhythmic intensity influencing feel.,“Fast verses feel more aggressive — slower ones more emotional.”
+Historical Perspective,EARLY_EXAMPLES_GROWL,Mentions first or early examples of growling he/she recalls.,
+Historical Perspective,EARLY_EXAMPLES_SCREAM,Mentions first or early examples of screaming he/she recalls.,
+Historical Perspective,ERA_LINEAGE,"Traces a stylistic path across eras/scenes; contrasts 1990s nu-metal → 2010s metalcore/deathcore, notes shifts.",“1999 Slipknot → later mainstream; BMTH shifted from inaudible screams to clean singing.”
+Historical Perspective,STYLE_EVOLUTION,"Identifies changes in a band’s vocal/sonic style over time (e.g., harsh→clean), and reflects on how that shaped perception.",“Bring Me the Horizon before *Sempiternal* had inaudible screams; later clean singing after vocal cord issues.”
+Women in Metal,GENDER_UNDERRREPRESENTATION,Notes lack of women or limited inclusion.,
+Other,COMMUNITY_SUPPORT,Mentions solidarity among women/femmes.,
+Other,MOOD_REGULATION,Mentions using metal for mood regulation or as calming or decompression tool.,
+Other,MUSIC_AS_EXPRESSION,Sees metal vocals as message or emotional outlet.,
+Other,ANIMAL_SOUND_COMPARISON,Refers to animal-like or non-human sound metaphors when describing vocal technique,
+Qualtrics Extended Topics,SURVEY_CONTEXT_NOTE,Meta-note for broader Qualtrics themes not present in stage-1 interview prompts.,Used to track stage-2-specific context in coding exports.

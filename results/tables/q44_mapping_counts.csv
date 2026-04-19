@@ -1,0 +1,37 @@
+Technique,Class,Count
+"False Cord, low",Scream-like,10
+"False Cord, low",Growl-like,32
+"False Cord, low",Hybrid/Shout-like,7
+"False Cord, mid",Scream-like,18
+"False Cord, mid",Growl-like,21
+"False Cord, mid",Hybrid/Shout-like,22
+"Fry, low",Scream-like,14
+"Fry, low",Growl-like,21
+"Fry, low",Hybrid/Shout-like,13
+"Fry, mid",Scream-like,28
+"Fry, mid",Growl-like,9
+"Fry, mid",Hybrid/Shout-like,19
+"Fry, high",Scream-like,30
+"Fry, high",Growl-like,5
+"Fry, high",Hybrid/Shout-like,12
+Hardcore scream/Shout,Scream-like,14
+Hardcore scream/Shout,Growl-like,5
+Hardcore scream/Shout,Hybrid/Shout-like,27
+Guttural,Scream-like,4
+Guttural,Growl-like,30
+Guttural,Hybrid/Shout-like,2
+Pig squeal,Scream-like,18
+Pig squeal,Growl-like,14
+Pig squeal,Hybrid/Shout-like,3
+Snarl,Scream-like,8
+Snarl,Growl-like,19
+Snarl,Hybrid/Shout-like,8
+Zombie scream,Scream-like,17
+Zombie scream,Growl-like,9
+Zombie scream,Hybrid/Shout-like,5
+Banshee scream,Scream-like,28
+Banshee scream,Growl-like,1
+Banshee scream,Hybrid/Shout-like,7
+Goblin scream,Scream-like,24
+Goblin scream,Growl-like,8
+Goblin scream,Hybrid/Shout-like,7

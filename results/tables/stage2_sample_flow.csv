@@ -1,0 +1,8 @@
+Metric,Value
+Qualtrics rows in export,72
+Finished responses (Finished=1),39
+Any response in Q43-Q46 block,45
+Any response in Q43-Q46 and Finished=1,37
+At least one Q44 row answered,38
+All three Q45 fields non-empty,33
+Non-empty Q46 responses,40

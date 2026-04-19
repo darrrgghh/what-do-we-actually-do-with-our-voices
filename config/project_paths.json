@@ -1,0 +1,11 @@
+{
+  "snapshot_root": "data/raw/source_repo_snapshot",
+  "stage1_segments_input": "data/raw/source_repo_snapshot/analysis/segments.csv",
+  "stage1_codebook_input": "data/raw/source_repo_snapshot/analysis/codebook.csv",
+  "stage1_qa_folder": "data/raw/source_repo_snapshot/analysis/q&a",
+  "qualtrics_input": "data/raw/source_repo_snapshot/vocalist_perspective(interview_qualtrics+old_interviews)/qualtrics_data_export/Metal_Vocalists_Interviews_April 18, 2026_20.32.csv",
+  "processed_dir": "data/processed",
+  "codebook_output": "data/codebooks/codebook_v2_stage1_stage2.csv",
+  "results_reports_dir": "results/reports",
+  "results_tables_dir": "results/tables"
+}
