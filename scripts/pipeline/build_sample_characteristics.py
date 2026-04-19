@@ -1,14 +1,10 @@
 from __future__ import annotations
-
 from pathlib import Path
-
 import numpy as np
 import pandas as pd
 
-
 def _numeric_age(s: pd.Series) -> pd.Series:
     return pd.to_numeric(s.astype(str).str.replace(r"[^\d.]", "", regex=True), errors="coerce")
-
 
 def summarize_stage1(root: Path) -> None:
     seg = pd.read_csv(root / "data" / "processed" / "stage1_segments_18.csv")
@@ -31,17 +27,14 @@ def summarize_stage1(root: Path) -> None:
     ]
     summary = pd.DataFrame(rows, columns=["Metric", "Value"])
     summary.to_csv(root / "results" / "tables" / "stage1_demographics_summary.csv", index=False)
-
     gcounts = p["Gender"].fillna("Unknown").value_counts().rename_axis("Gender").reset_index(name="Count")
     gcounts.to_csv(root / "results" / "tables" / "stage1_gender_counts.csv", index=False)
-
 
 def _stage2_slice(df: pd.DataFrame, finished_only: bool) -> pd.DataFrame:
     if finished_only and "Finished" in df.columns:
         fin = pd.to_numeric(df["Finished"], errors="coerce").eq(1)
         return df.loc[fin].copy()
     return df.copy()
-
 
 def summarize_stage2(root: Path) -> None:
     q = pd.read_csv(root / "data" / "processed" / "qualtrics_deidentified.csv")
@@ -51,7 +44,6 @@ def summarize_stage2(root: Path) -> None:
         sub = _stage2_slice(q, finished_only)
         age = _numeric_age(sub.get("Q1 Age", pd.Series(dtype=float)))
         n = len(sub)
-
         def add(metric: str, value: float | int | str) -> None:
             out_rows.append({"Slice": label, "Metric": metric, "Value": value})
 
@@ -93,7 +85,6 @@ def summarize_stage2(root: Path) -> None:
     s1 = pd.read_csv(root / "data" / "processed" / "stage1_segments_18.csv")
     p1 = s1.drop_duplicates(subset=["Vocalist"])
     age1 = pd.to_numeric(p1["Age"], errors="coerce")
-
     qf = _stage2_slice(q, True)
     age2 = _numeric_age(qf.get("Q1 Age", pd.Series(dtype=float)))
 
@@ -115,14 +106,12 @@ def summarize_stage2(root: Path) -> None:
     ]
     pd.DataFrame(cmp_rows).to_csv(root / "results" / "tables" / "stage1_vs_stage2_age_compare.csv", index=False)
 
-
 def main() -> None:
     root = Path(__file__).resolve().parents[2]
     (root / "results" / "tables").mkdir(parents=True, exist_ok=True)
     summarize_stage1(root)
     summarize_stage2(root)
     print("Wrote sample characteristic tables under results/tables/")
-
 
 if __name__ == "__main__":
     main()

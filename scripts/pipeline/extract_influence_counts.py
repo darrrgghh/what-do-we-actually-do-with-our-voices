@@ -1,11 +1,8 @@
 from __future__ import annotations
-
 import re
 from collections import Counter
 from pathlib import Path
-
 import pandas as pd
-
 
 def _split_names(inner: str) -> list[str]:
     inner = inner.strip()
@@ -35,14 +32,12 @@ def _split_names(inner: str) -> list[str]:
         return [inner]
     return parts
 
-
 def _normalize(name: str) -> str:
     name = name.strip()
     name = re.sub(r"\s+", " ", name)
     if len(name) > 120:
         name = name[:117] + "..."
     return name
-
 
 def _balanced_inners(text: str, label: str) -> list[str]:
     out: list[str] = []
@@ -71,7 +66,6 @@ def _balanced_inners(text: str, label: str) -> list[str]:
         i = j
     return out
 
-
 def extract_from_codes(codes: str) -> tuple[list[str], list[str]]:
     bands: list[str] = []
     vocalists: list[str] = []
@@ -84,7 +78,6 @@ def extract_from_codes(codes: str) -> tuple[list[str], list[str]]:
         for p in _split_names(inner):
             vocalists.append(_normalize(p))
     return bands, vocalists
-
 
 def main() -> None:
     root = Path(__file__).resolve().parents[2]

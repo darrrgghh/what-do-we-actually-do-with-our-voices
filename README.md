@@ -17,6 +17,7 @@ This repository is organized for manuscript preparation and reproducible analysi
 ## Repository layout
 
 - `data/processed/` - de-identified analysis-ready data
+- `data/stage1_interviews_qa/` - Stage 1 interview transcripts in Q&A text form (`A.txt`–`R.txt`; filenames use participant IDs only, aligned with manuscript quotations)
 - `data/codebooks/` - codebooks and code mappings
 - `scripts/stage1/` - interview coding and stage-1 preparation
 - `scripts/stage2/` - Qualtrics cleaning and stage-2 coding

@@ -1,13 +1,9 @@
 from __future__ import annotations
-
 from pathlib import Path
-
 import pandas as pd
-
 
 def build_stage1_tables(root: Path) -> None:
     s1 = pd.read_csv(root / "data" / "processed" / "stage1_segments_18.csv")
-
     s1["PrimaryCodeNorm"] = (
         s1["PrimaryCode"]
         .astype(str)
@@ -57,13 +53,10 @@ def build_stage2_tables(root: Path) -> None:
 
     q44 = df[[f"Q44_{i}" for i in range(1, 13)]].fillna("").astype(str)
     flow_rows.append(("At least one Q44 row answered", int(q44.apply(lambda r: any(x.strip() != "" for x in r), axis=1).sum())))
-
     q45 = df[["Q45_1", "Q45_2", "Q45_3"]].fillna("").astype(str)
     flow_rows.append(("All three Q45 fields non-empty", int(q45.apply(lambda r: all(x.strip() != "" for x in r), axis=1).sum())))
-
     q46 = df["Q46"].fillna("").astype(str).str.strip()
     flow_rows.append(("Non-empty Q46 responses", int((q46 != "").sum())))
-
     pd.DataFrame(flow_rows, columns=["Metric", "Value"]).to_csv(
         root / "results" / "tables" / "stage2_sample_flow.csv",
         index=False,
@@ -82,7 +75,7 @@ def build_stage2_tables(root: Path) -> None:
         3: "Fry, low",
         4: "Fry, mid",
         5: "Fry, high",
-        6: "Hardcore scream/Shout",
+        6: "Hardcore Scream",
         7: "Guttural",
         8: "Pig squeal",
         9: "Snarl",
@@ -134,7 +127,5 @@ def main() -> None:
     build_stage2_tables(root)
     print("Manuscript tables refreshed.")
 
-
 if __name__ == "__main__":
     main()
-

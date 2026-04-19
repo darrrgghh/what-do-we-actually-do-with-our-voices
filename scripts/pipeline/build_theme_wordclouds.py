@@ -1,14 +1,11 @@
 from __future__ import annotations
-
 import re
 from pathlib import Path
-
 import matplotlib.pyplot as plt
 import pandas as pd
 from wordcloud import STOPWORDS, WordCloud
 
-
-# --- Manual extras (beyond wordcloud.STOPWORDS) --------------------------------
+# Manual extras (beyond wordcloud.STOPWORDS) 
 # NOTE: wordcloud.STOPWORDS already covers many function words (a, the, is, was, were, …).
 
 EXTRA_STOP: set[str] = {
@@ -99,7 +96,7 @@ EXTRA_STOP: set[str] = {
     "anyways",
     "else",
     "elsewhere",
-    # Connectors (often noise in clouds)
+    # Connectors 
     "therefore",
     "thus",
     "hence",
@@ -531,13 +528,10 @@ LY_ADVERB_STOPS: frozenset[str] = frozenset(
 )
 
 assert all(w.endswith("ly") for w in LY_ADVERB_STOPS), "LY_ADVERB_STOPS must be -ly words only"
-
 TOKEN_RE = re.compile(r"\b[\w']+\b", re.UNICODE)
-
 
 def _normalize_apostrophes(s: str) -> str:
     return s.replace("\u2018", "'").replace("\u2019", "'").replace("\u201c", '"').replace("\u201d", '"')
-
 
 def _strip_possessive_suffix(token: str) -> str:
     t = token.lower()
@@ -620,8 +614,6 @@ def main() -> None:
         p.unlink(missing_ok=True)
 
     df = pd.read_csv(root / "data" / "processed" / "stage1_segments_18.csv")
-
-    # Standalone PNGs: high resolution for possible reuse outside the montage
     standalone_w, standalone_h = 1400, 900
 
     def make_cloud(text: str, out_name: str) -> None:
@@ -663,7 +655,6 @@ def main() -> None:
         plt.close()
 
     print("Wrote wordcloud PNGs under manuscript/figures/")
-
 
 if __name__ == "__main__":
     main()

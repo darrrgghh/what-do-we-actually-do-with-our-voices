@@ -27,6 +27,12 @@ python scripts/stage1/complete_stage1_coding.py
 python scripts/stage2/process_qualtrics.py
 ```
 
+To refresh public Stage~1 interview Q\&A files (`data/stage1_interviews_qa/`, letter-only filenames) from the parent project’s `analysis/q&a/` tree:
+
+```bash
+python scripts/pipeline/copy_stage1_interviews_qa.py
+```
+
 ## Determinism and provenance
 
 - Scripts write outputs with fixed filenames to `data/processed/`.
