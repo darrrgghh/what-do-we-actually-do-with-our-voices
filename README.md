@@ -1,4 +1,4 @@
-# what-do-we-actually-do-with-our-voices
+# What Do We Actually Do With Our Voices? A Two-Stage Study of Extreme Metal Vocal Practice.
 
 Publication workspace for a two-stage study on extreme metal vocals.
 
