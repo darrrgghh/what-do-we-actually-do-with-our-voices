@@ -1,0 +1,34 @@
+Slice,Metric,Value
+all_rows,N_rows,72.0
+all_rows,Age_median,30.5
+all_rows,Age_q25,25.0
+all_rows,Age_q75,34.0
+all_rows,Age_nonmissing_n,58.0
+all_rows,Gender_Male,47.0
+all_rows,Gender_Female,10.0
+all_rows,Gender_Other (please specify),1.0
+all_rows,NativeLanguage_nonempty_n,58.0
+all_rows,Location_nonempty_n,54.0
+all_rows,Q6_entry_nonempty,55.0
+all_rows,Q7_nonempty,55.0
+all_rows,Musicianship_Serious amateur musician,19.0
+all_rows,Musicianship_Semiprofessional musician,16.0
+all_rows,Musicianship_Amateur musician,13.0
+all_rows,Musicianship_Professional musician,2.0
+all_rows,Musicianship_Music-loving nonmusician,1.0
+finished_only,N_rows,39.0
+finished_only,Age_median,32.0
+finished_only,Age_q25,25.5
+finished_only,Age_q75,34.5
+finished_only,Age_nonmissing_n,39.0
+finished_only,Gender_Male,32.0
+finished_only,Gender_Female,6.0
+finished_only,NativeLanguage_nonempty_n,38.0
+finished_only,Location_nonempty_n,37.0
+finished_only,Q6_entry_nonempty,37.0
+finished_only,Q7_nonempty,37.0
+finished_only,Musicianship_Serious amateur musician,14.0
+finished_only,Musicianship_Semiprofessional musician,12.0
+finished_only,Musicianship_Amateur musician,7.0
+finished_only,Musicianship_Music-loving nonmusician,1.0
+finished_only,Musicianship_Professional musician,1.0

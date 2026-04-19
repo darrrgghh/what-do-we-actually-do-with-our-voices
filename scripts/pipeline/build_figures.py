@@ -40,10 +40,10 @@ def main() -> None:
 
     q44 = pd.read_csv(root / "results" / "tables" / "q44_mapping_counts.csv")
     pivot = q44.pivot(index="Technique", columns="Class", values="Count").fillna(0)
-    for c in ["Scream-like", "Growl-like", "Hybrid/Shout-like"]:
+    for c in ["Scream-like", "Growl-like", "Hybrid/Yell-like"]:
         if c not in pivot.columns:
             pivot[c] = 0.0
-    pivot = pivot[["Scream-like", "Growl-like", "Hybrid/Shout-like"]]
+    pivot = pivot[["Scream-like", "Growl-like", "Hybrid/Yell-like"]]
     plt.figure(figsize=(7, 8))
     ax = sns.heatmap(
         pivot,

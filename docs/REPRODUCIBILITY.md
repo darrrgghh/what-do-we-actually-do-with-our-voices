@@ -18,7 +18,7 @@ Run full preparation:
 python scripts/pipeline/run_all.py
 ```
 
-This also runs `scripts/pipeline/build_manuscript_tables.py`, `extract_influence_counts.py`, `build_figures.py`, and `build_theme_wordclouds.py`, writing tables to `results/tables/` (including `top15_bands.csv` and `top15_vocalists.csv`) and figures to `manuscript/figures/`.
+This also runs `scripts/pipeline/build_manuscript_tables.py`, `build_sample_characteristics.py`, `extract_influence_counts.py`, `build_figures.py`, and `build_theme_wordclouds.py`, writing tables to `results/tables/` (including `top15_bands.csv`, `top15_vocalists.csv`, theme-count comparisons, and demographics summaries) and figures to `manuscript/figures/`.
 
 Run stage-specific:
 

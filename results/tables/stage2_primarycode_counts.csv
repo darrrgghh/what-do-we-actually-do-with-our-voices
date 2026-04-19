@@ -1,4 +1,11 @@
 Theme,PrimaryCode,Count
+Demographics,SURVEY_CONTEXT_NOTE,94
+Demographics,BAND_INFLUENCE,21
+Demographics,VOCAL_HEALTH,4
+Demographics,GROWL_TECHNIQUE,2
+Demographics,SCREAMING_TECHNIQUE,2
+Demographics,INTELLIGIBILITY_IMPORTANT,1
+Education,ONLINE_LEARNING,25
 Historical Perspective,MUSIC_AS_EXPRESSION,29
 Historical Perspective,INTELLIGIBILITY_IMPORTANT,5
 Historical Perspective,BAND_INFLUENCE,1
@@ -6,25 +13,48 @@ Historical Perspective,FALSE_CORD,1
 Historical Perspective,FRY_TECHNIQUE,1
 Historical Perspective,GROWL_TECHNIQUE,1
 Historical Perspective,SCREAMING_TECHNIQUE,1
-Other,MUSIC_AS_EXPRESSION,850
-Other,BAND_INFLUENCE,108
-Other,SCREAMING_TECHNIQUE,90
-Other,GROWL_TECHNIQUE,62
-Other,FALSE_CORD,51
-Other,INTELLIGIBILITY_IMPORTANT,37
-Other,VOCAL_HEALTH,30
-Other,FRY_TECHNIQUE,15
-Other,MELODY_IMPORTANT,12
+Musical Background,MUSIC_AS_EXPRESSION,280
+Musical Background,BAND_INFLUENCE,57
+Musical Background,INTELLIGIBILITY_IMPORTANT,11
+Musical Background,MELODY_IMPORTANT,10
+Musical Background,SCREAMING_TECHNIQUE,5
+Musical Background,VOCAL_HEALTH,5
+Musical Background,FALSE_CORD,1
+Musical Background,FRY_TECHNIQUE,1
+Musical Background,GROWL_TECHNIQUE,1
+Musical Taste & Influence,MUSIC_AS_EXPRESSION,198
+Musical Taste & Influence,BAND_INFLUENCE,26
+Musical Taste & Influence,INTELLIGIBILITY_IMPORTANT,11
+Musical Taste & Influence,VOCAL_HEALTH,4
+Musical Taste & Influence,SCREAMING_TECHNIQUE,2
+Musical Taste & Influence,GROWL_TECHNIQUE,1
+Other,MUSIC_AS_EXPRESSION,90
+Other,SCREAMING_TECHNIQUE,14
+Other,INTELLIGIBILITY_IMPORTANT,13
+Other,FALSE_CORD,9
+Other,BAND_INFLUENCE,4
+Other,GROWL_TECHNIQUE,3
+Other,MELODY_IMPORTANT,2
+Other,VOCAL_HEALTH,2
+Other,FRY_TECHNIQUE,1
 Other,GENDER_UNDERRREPRESENTATION,1
-Perception & Intelligibility,EXTREME_VOCALS_DEFINITION,24
-Perception & Intelligibility,SCREAMING_TECHNIQUE,7
+Perception & Intelligibility,EXTREME_VOCALS_DEFINITION,101
+Perception & Intelligibility,SCREAMING_TECHNIQUE,53
+Perception & Intelligibility,GROWL_TECHNIQUE,48
 Perception & Intelligibility,FALSE_CORD,2
 Perception & Intelligibility,VOCAL_HEALTH,2
 Perception & Intelligibility,FRY_TECHNIQUE,1
-Perception & Intelligibility,GROWL_TECHNIQUE,1
-Vocal Technique & Style,SCREAMING_TECHNIQUE,22
+Vocal Health,VOCAL_HEALTH,37
+Vocal Health,SCREAMING_TECHNIQUE,7
+Vocal Health,FALSE_CORD,1
+Vocal Health,FRY_TECHNIQUE,1
+Vocal Technique & Style,SCREAMING_TECHNIQUE,98
+Vocal Technique & Style,FALSE_CORD,40
+Vocal Technique & Style,FRY_TECHNIQUE,12
 Vocal Technique & Style,BAND_INFLUENCE,10
-Vocal Technique & Style,VOCAL_HEALTH,1
+Vocal Technique & Style,GROWL_TECHNIQUE,8
+Vocal Technique & Style,VOCAL_HEALTH,3
+Vocal Technique & Style,INTELLIGIBILITY_IMPORTANT,1
 Women in Metal,GENDER_UNDERRREPRESENTATION,22
 Women in Metal,GROWL_TECHNIQUE,4
 Women in Metal,FALSE_CORD,3

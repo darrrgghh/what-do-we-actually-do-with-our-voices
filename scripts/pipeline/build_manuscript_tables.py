@@ -90,7 +90,7 @@ def build_stage2_tables(root: Path) -> None:
         11: "Banshee scream",
         12: "Goblin scream",
     }
-    classes = ["Scream-like", "Growl-like", "Hybrid/Shout-like"]
+    classes = ["Scream-like", "Growl-like", "Hybrid/Yell-like"]
     has_q44 = q44.apply(lambda r: any(x.strip() != "" for x in r), axis=1)
     rows = []
     for i in range(1, 13):

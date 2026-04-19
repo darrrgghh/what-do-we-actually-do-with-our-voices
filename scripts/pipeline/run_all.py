@@ -19,6 +19,7 @@ def main() -> None:
     run_script(project_root / "scripts" / "stage1" / "complete_stage1_coding.py")
     run_script(project_root / "scripts" / "stage2" / "process_qualtrics.py")
     run_script(project_root / "scripts" / "pipeline" / "build_manuscript_tables.py")
+    run_script(project_root / "scripts" / "pipeline" / "build_sample_characteristics.py")
     run_script(project_root / "scripts" / "pipeline" / "extract_influence_counts.py")
     run_script(project_root / "scripts" / "pipeline" / "build_figures.py")
     run_script(project_root / "scripts" / "pipeline" / "build_theme_wordclouds.py")

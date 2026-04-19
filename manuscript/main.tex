@@ -7,6 +7,7 @@
 \usepackage{booktabs}
 \usepackage{longtable}
 \usepackage{hyperref}
+\usepackage{placeins}
 \usepackage{amsmath}
 \usepackage[backend=biber,style=apa,sorting=ynt]{biblatex}
 \addbibresource{references.bib}
@@ -14,59 +15,107 @@
 \title{What Do We Actually Do With Our Voices?\\
 A Two-Stage Study of Extreme Metal Vocal Practice}
 \author{Alexey Voronin \and Nat Condit-Schultz}
-\date{}
+\date{\begin{tabular}{c}
+Georgia Institute of Technology\\[0.75em]
+May 2026
+\end{tabular}}
 
 \begin{document}
 \maketitle
 
 \begin{abstract}
-\textbf{Objectives:} Extreme metal voice research has made substantial progress in physiology and perception, but performer-centered descriptions of technique, training, and practical categorization remain underrepresented. We analyze how vocalists describe their own practice and whether a three-class perceptual scaffold (scream-like, growl-like, hybrid/shout-like) is usable from the performer perspective.\\
-\textbf{Methods:} We used a two-stage design. Stage 1 consisted of 18 semi-structured one-on-one interviews coded into thematic segments (810 segments total). Stage 2 used a Qualtrics survey (72 total rows; 39 finished) and included both open-text prompts and a dedicated perceptual-class block (Q43--Q46). Partial responses were retained when they contained meaningful textual content.\\
-\textbf{Results:} Stage 1 showed stable high-frequency thematic domains in musical background, taste/influence, perception/intelligibility, and technique/health narratives. In Stage 2, most respondents endorsed the three-class framework (Q43: 66.7\% agree), while technique-to-class mapping (Q44, \(N=38\)) showed both expected trends (low-register and guttural toward growl-like; high fry and banshee toward scream-like) and systematic overlap in mid/bridging techniques. Q46 indicated that explicit class-language is used inconsistently in everyday practice (20.0\% regularly, 47.5\% sometimes, 32.5\% rarely/never).\\
-\textbf{Conclusions:} A two-stage mixed qualitative design supports a practically useful but gradient performer-centered taxonomy. Perceptual classes are interpretable for most vocalists, yet production terminology remains primary in day-to-day vocal reasoning.
+\textbf{Objectives:} Extreme metal voice research has made substantial progress in physiology and perception, but performer-centered descriptions of technique, training, and practical categorization remain underrepresented.
+We analyze how vocalists describe their own practice and whether a three-class perceptual scaffold (scream-like, growl-like, hybrid/yell-like) is usable from the performer perspective.\\
+\textbf{Methods:} We used a two-stage design.
+Stage 1 consisted of 18 semi-structured one-on-one interviews coded into thematic segments (810 segments total).
+Stage 2 used a Qualtrics survey (72 total rows; 39 finished) and included both open-text prompts and a dedicated perceptual-class block (Q43--Q46).
+Partial responses were retained when they contained meaningful textual content.\\
+\textbf{Results:} Stage 1 showed stable high-frequency thematic domains in musical background, taste/influence, perception/intelligibility, and technique/health narratives.
+In Stage 2, most respondents endorsed the three-class framework (Q43: 66.7\% agree), while technique-to-class mapping (Q44, \(N=38\)) showed both expected trends (low-register and guttural toward growl-like; high fry and banshee toward scream-like) and systematic overlap in mid/bridging techniques.
+Q46 indicated that explicit class-language is used inconsistently in everyday practice (20.0\% regularly, 47.5\% sometimes, 32.5\% rarely/never).\\
+\textbf{Conclusions:} A two-stage mixed qualitative design supports a practically useful but gradient performer-centered taxonomy.
+Perceptual classes are interpretable for most vocalists, yet production terminology remains primary in day-to-day vocal reasoning.
+Q44 explicitly allowed multiple class tags per technique, consistent with treating class membership as non-exclusive rather than forcing a one-to-one mapping.
 \end{abstract}
 
 \section{Introduction}
-Extreme metal vocalization is frequently described through two partially overlapping vocabularies. The first is production-centered (e.g., false cord, fry, guttural, tunnel-throat variants), while the second is perceptual and categorical (e.g., scream-like, growl-like, hybrid/shout-like). Prior research has strongly advanced the physiological and acoustic characterization of harsh vocal effects, including high-speed imaging and electroglottographic/acoustic measurement protocols \parencite{Eckers2009Growling,Lee2025VocalDistortion,Aaen2024ExtremeVocalEffects,Zheng2009FalseVocalFolds,Guzman2018MetalSinging,blomgren1998vocalfry}. In parallel, perceptual work has shown that vocal effects are not heard as a single undifferentiated category and that listener expertise influences categorization \parencite{Pinto2023VocalEffects,Anikin2025AcousticRoughness}.
+Extreme metal vocalization is frequently described through two partially overlapping vocabularies.
+The first is production-centered (e.g., false cord, fry, guttural, tunnel-throat variants), while the second is perceptual and categorical (e.g., scream-like, growl-like, hybrid/yell-like).
+Prior research has strongly advanced the physiological and acoustic characterization of harsh vocal effects, including high-speed imaging and electroglottographic/acoustic measurement protocols \parencite{Eckers2009Growling,Lee2025VocalDistortion,Aaen2024ExtremeVocalEffects,Zheng2009FalseVocalFolds,Guzman2018MetalSinging,blomgren1998vocalfry}.
+In parallel, perceptual work has shown that vocal effects are not heard as a single undifferentiated category and that listener expertise influences categorization \parencite{Pinto2023VocalEffects,Anikin2025AcousticRoughness}.
 
-Even with this progress, a performer-centered gap remains. We still know comparatively less about how vocalists themselves coordinate production terminology, perceptual shorthand, health management, and stylistic intent in real practice contexts. This gap matters for Journal of Voice audiences because pedagogy and clinical communication often require translation between biomechanical language and performer-facing descriptors \parencite{sadolin1996rough,sadolin2000complete,sadolin2012effects}.
+Even with this progress, a performer-centered gap remains.
+We still know comparatively less about how vocalists themselves coordinate production terminology, perceptual shorthand, health management, and stylistic intent in real practice contexts.
+This gap matters for Journal of Voice audiences because pedagogy and clinical communication often require translation between biomechanical language and performer-facing descriptors \parencite{sadolin1996rough,sadolin2000complete,sadolin2012effects}.
 
-This article addresses that gap with a two-stage design. Stage 1 captures in-depth interview narratives and thematic coding from 18 extreme metal vocalists. Stage 2 extends scope through Qualtrics, combining open-text responses with a targeted perceptual-class block (Q43--Q46). The second stage is not a replacement for interviews but a structured test of whether a compact perceptual scaffold can organize a broader set of techniques and performer self-descriptions.
+This article addresses that gap with a two-stage design.
+Stage 1 captures in-depth interview narratives and thematic coding from 18 extreme metal vocalists.
+Stage 2 extends scope through Qualtrics, combining open-text responses with a targeted perceptual-class block (Q43--Q46).
+The second stage is not a replacement for interviews but a structured test of whether a compact perceptual scaffold can organize a broader set of techniques and performer self-descriptions.
 
-Our contribution is fourfold. First, we provide a reproducible performer-centered dataset and analysis pipeline spanning interviews and survey responses. Second, we show how technique labels and perceptual classes converge in some regions but remain gradient in others. Third, we connect health and sustainability narratives to measurable research on extreme effects. Fourth, we frame these findings within scene and identity contexts that shape how technique language is used and received \parencite{Herbst2017VoiceOfAnarchy,Wallmark2018SoundOfEvil,Ribaldini2019Terminology,Sharman2015AngerProcessing}.
+Our contribution is fourfold.
+First, we provide a reproducible performer-centered dataset and analysis pipeline spanning interviews and survey responses.
+Second, we show how technique labels and perceptual classes converge in some regions but remain gradient in others.
+Third, we connect health and sustainability narratives to measurable research on extreme effects.
+Fourth, we frame these findings within scene and identity contexts that shape how technique language is used and received \parencite{Herbst2017VoiceOfAnarchy,Wallmark2018SoundOfEvil,Ribaldini2019Terminology,Sharman2015AngerProcessing}.
 
 \section{Background and Related Work}
 \subsection{Physiology, biomechanics, and voice production}
-Voice-science literature increasingly treats harsh/extreme vocalization as a family of related production regimes rather than a single mechanism. Early work on death-metal growl production documented involvement beyond canonical modal phonation and highlighted supraglottal contributions \parencite{Eckers2009Growling}. More recent high-speed imaging studies provide finer-grained differentiation among distortion types across stylistic contexts \parencite{Lee2025VocalDistortion}. Computational and biomechanical work has further supported the role of false-fold and related structures in shaping airflow and vibratory behavior under extreme settings \parencite{Zheng2009FalseVocalFolds}. 
+Voice-science literature increasingly treats harsh/extreme vocalization as a family of related production regimes rather than a single mechanism.
+Early work on death-metal growl production documented involvement beyond canonical modal phonation and highlighted supraglottal contributions \parencite{Eckers2009Growling}.
+More recent high-speed imaging studies provide finer-grained differentiation among distortion types across stylistic contexts \parencite{Lee2025VocalDistortion}.
+Computational and biomechanical work has further supported the role of false-fold and related structures in shaping airflow and vibratory behavior under extreme settings \parencite{Zheng2009FalseVocalFolds}.
 
-Clinical-laboratory evidence also indicates that extreme effects are not inherently pathological when performed with controlled airflow, pressure, and coordination \parencite{Aaen2024ExtremeVocalEffects,Guzman2018MetalSinging}. These findings align with long-standing pedagogical claims that distortion can be trained as a controllable layer rather than treated solely as misuse \parencite{sadolin1996rough,sadolin2000complete,sadolin2012effects}.
+Clinical-laboratory evidence also indicates that extreme effects are not inherently pathological when performed with controlled airflow, pressure, and coordination \parencite{Aaen2024ExtremeVocalEffects,Guzman2018MetalSinging}.
+These findings align with long-standing pedagogical claims that distortion can be trained as a controllable layer rather than treated solely as misuse \parencite{sadolin1996rough,sadolin2000complete,sadolin2012effects}.
 
 \subsection{Acoustics, MIR, and musicological description}
-Acoustic and musicological studies have shown that extreme vocals preserve analyzable structure despite high roughness and timbral complexity \parencite{Smialek2012Spectrographic,smialek2012musical,Tailleur2021AcousticSpace}. Emerging datasets and MIR tools further support systematic modeling of technique variation in heavy-metal contexts \parencite{tailleur2024emvddatasetdatasetextreme,Tailleur2024EMVD,Kalbag2022ScreamDetection,McFee2015librosa,Stadler2023VocalTrainML}. This line is important for the present study because it demonstrates that performer labels and perceptual categories can be empirically investigated rather than treated as purely anecdotal language.
+Acoustic and musicological studies have shown that extreme vocals preserve analyzable structure despite high roughness and timbral complexity \parencite{Smialek2012Spectrographic,smialek2012musical,Tailleur2021AcousticSpace}.
+Emerging datasets and MIR tools further support systematic modeling of technique variation in heavy-metal contexts \parencite{tailleur2024emvddatasetdatasetextreme,Tailleur2024EMVD,Kalbag2022ScreamDetection,McFee2015librosa,Stadler2023VocalTrainML}.
+This line is important for the present study because it demonstrates that performer labels and perceptual categories can be empirically investigated rather than treated as purely anecdotal language.
 
 \subsection{Perception and category structure}
-Perceptual research suggests that listeners can separate major vocal-effect categories with non-trivial reliability, and that familiarity with style affects identification performance \parencite{Pinto2023VocalEffects}. Work on roughness and voice-quality perception similarly implies that category judgments emerge from multiple interacting acoustic cues rather than one binary feature \parencite{Anikin2025AcousticRoughness,blomgren1998vocalfry}. For extreme vocals, this supports a gradient interpretation in which classes are meaningful but may overlap, especially in intermediate or mixed-intent techniques.
+Perceptual research suggests that listeners can separate major vocal-effect categories with non-trivial reliability, and that familiarity with style affects identification performance \parencite{Pinto2023VocalEffects}.
+Work on roughness and voice-quality perception similarly implies that category judgments emerge from multiple interacting acoustic cues rather than one binary feature \parencite{Anikin2025AcousticRoughness,blomgren1998vocalfry}.
+For extreme vocals, this supports a gradient interpretation in which classes are meaningful but may overlap, especially in intermediate or mixed-intent techniques.
 
 \subsection{Pedagogy, performer discourse, and scene context}
-Pedagogical frameworks in contemporary commercial and extreme singing have long emphasized trainable effects and targeted control strategies \parencite{sadolin2000complete,sadolin2012effects}. However, performer discourse in scene practice often mixes pedagogical labels, informal metaphors, and identity-laden descriptors \parencite{Ribaldini2019Terminology,Herbst2017VoiceOfAnarchy}. This is particularly salient where social positioning and genre identity shape how techniques are named, legitimized, or dismissed \parencite{Wallmark2018SoundOfEvil,Sharman2015AngerProcessing}.
+Pedagogical frameworks in contemporary commercial and extreme singing have long emphasized trainable effects and targeted control strategies \parencite{sadolin2000complete,sadolin2012effects}.
+However, performer discourse in scene practice often mixes pedagogical labels, informal metaphors, and identity-laden descriptors \parencite{Ribaldini2019Terminology,Herbst2017VoiceOfAnarchy}.
+This is particularly salient where social positioning and genre identity shape how techniques are named, legitimized, or dismissed \parencite{Wallmark2018SoundOfEvil,Sharman2015AngerProcessing}.
 
 \subsection{Methodological bridge to the present study}
-Because this project integrates interview coding with survey-based class mapping, it follows a sequential mixed evidence logic: depth-first elicitation, then broader structured testing. Similarity-space and arrangement methods from perceptual research provide useful conceptual parallels for interpreting overlap and non-binary category structure \parencite{Hout2013,Blanchard2016FreeSorting,Kriegeskorte2012InverseMDS,Shepard1962,Kruskal1964,BorgGroenen2005,Navarro2010}. We therefore frame our two-stage analysis as complementary evidence rather than a single inferential model.
+Because this project integrates interview coding with survey-based class mapping, it follows a sequential mixed evidence logic: depth-first elicitation, then broader structured testing.
+Similarity-space and arrangement methods from perceptual research provide useful conceptual parallels for interpreting overlap and non-binary category structure \parencite{Hout2013,Blanchard2016FreeSorting,Kriegeskorte2012InverseMDS,Shepard1962,Kruskal1964,BorgGroenen2005,Navarro2010}.
+We therefore frame our two-stage analysis as complementary evidence rather than a single inferential model.
 
 \section{Research Questions and Hypotheses}
-\textbf{RQ1.} How do extreme metal vocalists self-describe core production techniques and stylistic identity?\\
-\textbf{RQ2.} Which health-preservation and training practices are most consistently reported?\\
-\textbf{RQ3.} How do perceptual classes (scream-like, growl-like, hybrid/shout-like) align with self-reported techniques?\\
-\textbf{RQ4.} Which thematic domains expand in Stage 2 when prompts broaden beyond the interview protocol?
+Rather than treating ``what vocalists do'' as a fixed checklist, we treat performer language as something people negotiate in real scenes, bodies, and histories.
+The questions below follow that stance: they ask how descriptions hang together, what keeps voices sustainable in practice, and whether a compact perceptual vocabulary can still be useful when production labels multiply.
+
+\textbf{RQ1.} In their own words, how do extreme metal vocalists describe the techniques that matter to them, and how do those accounts connect to how they see themselves stylistically---not only \emph{what} they call a sound, but \emph{why} it belongs in their toolkit?
+
+\textbf{RQ2.} When vocalists talk about staying healthy and building skill over time, which training habits, precautions, and coping strategies show up often enough to look like shared culture rather than one-off anecdotes?
+
+\textbf{RQ3.} Survey items invite a listener-style scaffold (scream-like, growl-like, hybrid/yell-like). Where do those perceptual groupings line up with self-reported production techniques, and where do they refuse to stay in neat boxes?
+
+\textbf{RQ4.} Stage~2 widens the prompt set beyond what the interview protocol emphasized. Which thematic areas gain airtime when more people answer more questions---and does anything essential from Stage~1 quietly disappear?
 
 \medskip
-\textbf{H1.} Technique labels are stable at a high level but have partially overlapping boundaries in use.\\
-\textbf{H2.} Health management and prevention strategies co-occur with learning narratives and are central to performer discourse.\\
-\textbf{H3.} Stage 2 broadens thematic coverage beyond the interview core while preserving the main production/perception axes.
+\noindent
+These questions motivate three expectations we treat as orienting hypotheses rather than sharp null tests:
+
+\textbf{H1.} Everyday technique names are recognizable across performers, but the boundaries between them stay fuzzy: the same label can cover different motor habits and priorities.
+
+\textbf{H2.} Talk about health and prevention does not sit off to the side of ``real'' technique discussion; it travels together with stories of learning, mentorship, and making the voice work night after night.
+
+\textbf{H3.} Adding Stage~2 stretches the thematic map, yet the main threads---how sounds are produced, how they are heard, and what they cost the body---remain the backbone of what people share.
 
 \section{Methodology}
 \subsection{Ethics and Data Governance}
-All data handling followed IRB-governed human-subject practice for de-identification and restricted storage. Public-facing analysis artifacts exclude direct identifiers (e.g., IP address, precise location, recipient metadata). Quotations are presented in de-identified form using participant IDs.
+All data handling followed IRB-governed human-subject practice for de-identification and restricted storage.
+Public-facing analysis artifacts exclude direct identifiers (e.g., IP address, precise location, recipient metadata).
+Quotations are presented in de-identified form using participant IDs.
 
 \subsection{Two-Stage Design Overview}
 The study follows a sequential two-stage logic:
@@ -77,15 +126,34 @@ The study follows a sequential two-stage logic:
 
 This sequence reflects project development in practice: after Stage 1 interviews, we formalized the perceptual-class block in Stage 2 to test whether many concrete techniques can be grouped into a smaller set of usable perceptual classes.
 
+\subsection{Recruitment}
+Recruitment for both stages was \emph{voluntary}; all participants opted in without coercion, consistent with IRB expectations for online and interview-based research.
+
+\paragraph{Stage 1 (interviews).}
+The majority of interviewees were recruited through metal-oriented communities on social networks where a study flyer was posted.
+The flyer framed participation in connection with the \emph{Extreme Metal Vocal Techniques Dataset} project and sought extreme metal vocalists in the Atlanta metropolitan area for on-site dataset recording; one-on-one interviews were conducted as part of that same project.
+Three additional interviewees were reached through Facebook groups and Reddit spaces where vocalist-focused flyers for the later survey were also circulated; those individuals contacted the investigators after seeing recruitment posts and completed their interviews online, complementing the local Atlanta-area stream.
+
+\paragraph{Stage 2 (Qualtrics).}
+The Qualtrics instrument was advertised in the same kinds of online metal-vocal communities---groups where predominantly vocalists gather, including forums centered on extreme metal vocal technique and training-adjacent peer discussion (e.g., communities connected to organizations such as the Extreme Metal Vocal Institute and similar vocalist-only networks).
+As with Stage~1, enrollment was voluntary; the sample-flow rules for partial completion are described with Stage~2 methods below.
+
 \subsection{Stage 1: Interview Corpus}
-Stage 1 includes 18 one-on-one semi-structured interviews with extreme metal vocalists. The current coded corpus contains 810 thematic segments and 18 unique vocalist IDs (\texttt{A}--\texttt{R}). Segment-level fields include participant metadata, theme assignment, quotation text, primary code, and additional code tags for co-occurring concepts.
+Stage 1 includes 18 one-on-one semi-structured interviews with extreme metal vocalists.
+The coded corpus contains 810 thematic segments and 18 unique vocalist IDs (\texttt{A}--\texttt{R}).
+Segment-level fields include participant metadata, theme assignment, quotation text, primary code, and additional code tags for co-occurring concepts.
 
-Interview prompts covered musical background and influence, training pathways, technique usage, health and prevention, intelligibility/perception, melody/rhythm framing, historical perspective, and open contextual reflection. This structure was designed to preserve comparability across participants while allowing elaboration in participant-owned terminology.
+Interview prompts covered musical background and influence, training pathways, technique usage, health and prevention, intelligibility/perception, melody/rhythm framing, historical perspective, and open contextual reflection.
+This structure was designed to preserve comparability across participants while allowing elaboration in participant-owned terminology.
 
-Coding used a codebook strategy with primary and secondary labels. Existing manual coding was retained; previously uncoded material was completed in a reproducible assisted pass and explicitly tracked via \texttt{CodingSource}. In the current release, 76 rows are marked as assisted completion. We treat these rows as transparent interim coding, not as equivalent to independent multi-coder adjudication.
+Coding used a codebook strategy with primary and secondary labels.
+Existing manual coding was retained; previously uncoded material was completed in a reproducible assisted pass and explicitly tracked via \texttt{CodingSource}.
+In the current release, 76 rows are marked as assisted completion.
+We treat these rows as transparent interim coding, not as equivalent to independent multi-coder adjudication.
 
 \subsection{Stage 2: Qualtrics Corpus}
-Stage 2 uses a de-identified Qualtrics export with 72 total rows and 39 completed sessions (\texttt{Finished=1}). Following the agreed inclusion rule, partial sessions were retained when they contained meaningful textual data in target fields.
+Stage 2 uses a de-identified Qualtrics export with 72 total rows and 39 completed sessions (\texttt{Finished=1}).
+Following the agreed inclusion rule, partial sessions were retained when they contained meaningful textual data in target fields.
 
 The focal perceptual block includes:
 \begin{itemize}
@@ -104,9 +172,33 @@ We report:
     \item qualitative exemplars to illustrate how participants articulate themes in their own words.
 \end{itemize}
 
+Open-ended Qualtrics fields are assigned to Stage-1-aligned \emph{themes} using reproducible question-ID rules in the processing pipeline (each response row can yield multiple text segments after splitting).
+Stage~2 \emph{primary codes} on those segments are exploratory tags produced by lightweight regular-expression heuristics; they support topical indexing but are \emph{not} treated as equivalent to Stage~1 manual codebook application.
+
 This design supports an evidence synthesis in which Stage 1 supplies narrative depth and Stage 2 tests transferability of class-level framing across a broader response set.
 
 \section{Results}
+\subsection{Participant characteristics}
+Stage~1 (\(n=18\) interviewees) and Stage~2 (convenience sample from an online survey) are not intended as equivalent cohorts; we nonetheless summarize basic descriptors to contextualize generalizability.
+In Stage~1, median age was 25.5 years (interquartile range 23--28; range 18--44), median self-reported extreme-vocal experience was 40 months (IQR 36--120), and self-reported gender was 15 male and 3 female.
+Among \texttt{Finished=1} Stage~2 sessions (\(n=39\)), median age was 32 years (IQR 25.5--34.5); self-reported gender was 32 male, 6 female, and 1 other (free-text specification).
+The Stage~2 export contained 72 total rows (including partial sessions retained under the inclusion rule); median age across all export rows was 30.5 years (IQR 25--34, \(n=58\) non-missing ages).
+Where the survey asked for musicianship level (\texttt{Q11}), finished respondents most often selected ``serious amateur musician'' or ``semiprofessional musician'' labels---useful background, but not directly comparable to how interviewees were recruited.
+
+\begin{table}[ht]
+\centering
+\caption{Descriptive comparison of Stage 1 interviews vs Stage 2 finished surveys (age and gender).}
+\label{tab:samplechar}
+\begin{tabular}{lcc}
+\toprule
+ & Stage 1 (\(n=18\)) & Stage 2 finished (\(n=39\)) \\
+\midrule
+Age median (IQR) & 25.5 (23--28) & 32.0 (25.5--34.5) \\
+Male / Female / Other & 15 / 3 / --- & 32 / 6 / 1 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
 \subsection{Sample Flow and Analysis Coverage}
 \begin{table}[ht]
 \centering
@@ -127,7 +219,8 @@ Non-empty Q46 responses & 40 \\
 \end{tabular}
 \end{table}
 
-Table~\ref{tab:stage2flow} shows that the focused perceptual block had usable responses beyond completed sessions, supporting the partial-with-content inclusion rule. All reported \(N\) values are item-specific.
+Table~\ref{tab:stage2flow} shows that the focused perceptual block had usable responses beyond completed sessions, supporting the partial-with-content inclusion rule.
+All reported \(N\) values are item-specific.
 
 \subsection{Stage 1 Thematic Structure (Interview Narratives)}
 \begin{table}[ht]
@@ -155,62 +248,96 @@ Historical Perspective & 5 \\
 \begin{figure}[ht]
 \centering
 \includegraphics[width=0.92\linewidth]{stage1_themes_bar.png}
-\caption{Stage 1 segment counts by thematic codebook category (\(N=810\) coded segments). Counts reflect how often each theme was applied at the segment level (multiple themes per answer possible across separate segments).}
+\caption{Stage 1 segment counts by thematic codebook category (\(N=810\) coded segments).
+Counts reflect how often each theme was applied at the segment level (multiple themes per answer possible across separate segments).}
 \label{fig:stage1themesbar}
 \end{figure}
 
 \begin{figure}[ht]
 \centering
 \includegraphics[width=0.95\linewidth]{wordcloud_stage1_all.png}
-\caption{Illustrative word cloud for the full Stage 1 quotation corpus (English stopwords removed). The visualization highlights recurring lexical material but does not replace code-frequency analysis (see Limitations).}
+\caption{Illustrative word cloud for the full Stage 1 quotation corpus (English stopwords removed).
+The visualization highlights recurring lexical material but does not replace code-frequency analysis (see Limitations).}
 \label{fig:wcloudall}
 \end{figure}
 
 \begin{figure}[ht]
 \centering
-\includegraphics[width=\linewidth]{wordcloud_themes_montage.png}
-\caption{Illustrative word clouds for the six largest Stage 1 themes (segment count \(\geq 40\)). Rare themes (e.g., Historical Perspective, Women in Metal) are summarized in text rather than plotted at small \(n\).}
+\includegraphics[width=\linewidth,height=0.92\textheight,keepaspectratio]{wordcloud_themes_montage.png}
+\caption{Illustrative word clouds for the six largest Stage 1 themes (segment count \(\geq 40\)), in a \(3 \times 2\) grid (two panels per row).
+Each panel is rendered at increased resolution to improve readability at manuscript size.
+Rare themes (e.g., Historical Perspective, Women in Metal) are summarized in text rather than plotted at small \(n\).}
 \label{fig:wcloudmontage}
 \end{figure}
 
-Stage 1 is dominated by practical musician discourse (Table~\ref{tab:stage1themes}, Figure~\ref{fig:stage1themesbar}): background, influence histories, intelligibility concerns, and technique identity. Figures~\ref{fig:wcloudall}--\ref{fig:wcloudmontage} provide qualitative texture; interpretive claims below rely on coded themes and primary codes, not on word-cloud prominence. The distribution supports RQ1 and RQ2 by showing that participants do not isolate ``technique'' from broader contexts of scene history, pedagogy, and communication.
+Stage 1 is dominated by practical musician discourse (Table~\ref{tab:stage1themes}, Figure~\ref{fig:stage1themesbar}): background, influence histories, intelligibility concerns, and technique identity.
+Figures~\ref{fig:wcloudall}--\ref{fig:wcloudmontage} provide qualitative texture; interpretive claims below rely on coded themes and primary codes, not on word-cloud prominence.
+The distribution supports RQ1 and RQ2 by showing that participants do not isolate ``technique'' from broader contexts of scene history, pedagogy, and communication.
+Across themes, two patterns recurred: participants compared their own trajectory to named reference artists or bands, and they linked vocal choices to performance setting (studio, stage, rehearsal) rather than describing techniques as abstract labels alone---a stance consistent with performer-centered terminology research \parencite{Ribaldini2019Terminology,sadolin2012effects}.
 
 \subsubsection{Musical taste and influence}
-Participants narrated gateway listening, subgenre loyalty, and cross-genre curiosity. Several described scene-adjacent social pathways into heavy music, while others emphasized solitary discovery through recordings and games. Representative excerpts include: ``Slipknot was a gateway band for metalcore and deathcore'' (Participant B); ``I listened to a ton of metal, hardcore, deathcore, metalcore\ldots\ I was raised in the scene'' (Participant C); ``Post hardcore---I love the balance of super singy stuff with the heavy'' (Participant E); ``My sister showed me\ldots\ My Chemical Romance and then Slipknot on the more extreme side'' (Participant F). The theme mixes canon bands (often named as shared reference points) with idiosyncratic non-metal taste that still shapes phrasing and dynamics.
+Participants rarely offered a single ``origin story''; instead, they stacked gateway artists, subgenre phases, and later discoveries.
+Some emphasized socially mediated entry (friends, family, local scenes), while others described solitary listening or game- and media-driven exposure.
+Participant B pointed to Slipknot as a bridge into metalcore and deathcore; Participant C described being ``raised in the scene'' across core-heavy genres; Participant E contrasted sung sections with heaviness in post-hardcore; Participant F described sibling-mediated exposure to more extreme bands.
+These accounts sit alongside widely circulating band names that function as shared reference points in metal discourse \parencite{Herbst2017VoiceOfAnarchy,Ribaldini2019Terminology}.
+At the same time, several participants folded non-metal listening into how they think about phrasing and tone, so taste narratives are not reducible to a single ``metal-only'' profile.
 
 \subsubsection{Musical background}
-Interviewees reported heterogeneous musician profiles: multi-instrumentalists, lyric-focused writers, and vocal specialists. Many described DAW-centered writing workflows and demo-driven collaboration. Examples: ``I compose entire songs\ldots\ guitar is a tool to build off something catchy'' (Participant A); ``I tried learning guitar and drums\ldots\ I focused on singing and screaming at a very early age'' (Participant C); ``I've been in bands for almost 30 years\ldots\ from school orchestra to death metal projects'' (Participant K). These accounts situate vocal identity within band roles, recording habits, and touring or studio constraints.
+Interviewees reported heterogeneous musician profiles: multi-instrumentalists, lyric-focused writers, and vocal specialists.
+Many described DAW-centered writing workflows and demo-driven collaboration; others foregrounded years of band experience spanning several projects.
+Participant A framed guitar as a compositional tool for hooks; Participant C emphasized committing early to voice after struggling with other instruments; Participant K summarized decades of band involvement across stylistically different projects.
+Taken together, these accounts situate vocal identity within band roles, recording habits, and touring or studio constraints rather than treating vocals as isolated from musicianship.
 
 \subsubsection{Education and learning pathways}
-Formal classical or choral training co-occurred with self-teaching, peer coaching, and online pedagogy. Illustrative quotes: ``Completely self-taught in terms of instruments and vocals'' (Participant A); ``I was trained by my choir teacher\ldots\ for classical singing'' plus later ``Extreme Vocal Institute'' work (Participant C); ``YouTube and Reddit\ldots\ learning how to do it the safe way'' (Participant Q). The theme underscores iterative repair of technique after early misuse---a recurring narrative tied to health (below).
+Formal classical or choral training co-occurred with self-teaching, peer coaching, and online pedagogy---often within the same biography.
+Participant A described a fully self-taught path; Participant C combined choir-based classical training with later extreme-vocal-focused study; Participant Q emphasized community and video-based learning aimed at safety.
+This mix aligns with broader observations that extreme-vocal learning is frequently informal and peer-networked \parencite{Ribaldini2019Terminology}, while still borrowing from classical or speech-adjacent ideas when available.
+Across interviews, a recurring storyline was \emph{trial, error, and revision}: participants described early misuse, then gradual refinement---a thread that connects directly to health narratives below.
 
 \subsubsection{Vocal technique and style}
-Participants articulated register preferences, fry versus false-fold imagery, and stylistic blending across eras. Examples: ``When I want to enunciate a point, high fry is good'' (Participant B); ``I like to do vocal acrobatics\ldots\ use everything I have and not just one thing'' (Participant C); ``For high fries, definitely Randy Blythe\ldots\ for the lows, Levi Benton'' (Participant B); ``I pretty much only know fry scream'' (Participant R). These statements support H1: shared labels mask different default settings and artistic priorities.
+Participants articulated register preferences, fry versus false-fold imagery, and stylistic blending across eras; the same coarse label (e.g., ``fry'') could imply different default settings for different people.
+Participant B linked high fry to articulation goals and referenced different reference artists for highs versus lows; Participant C emphasized switching techniques within a set; Participant R described a comparatively narrow but deep specialization in fry scream.
+Such contrasts support H1: shared terminology masks different motor defaults, artistic priorities, and register comfort zones---a finding that parallels acoustic heterogeneity across ostensibly similar effect labels in recent datasets \parencite{Tailleur2021AcousticSpace,tailleur2024emvddatasetdatasetextreme}.
 
 \subsubsection{Vocal health and sustainability}
-Narratives emphasized hydration, warm-ups, dietary triggers, pacing on tour, and clinical reassurance after symptoms. Examples: ``Number one: drink water\ldots\ if you wait until the show day it's too late'' (Participant B); ``I've had medical checks\ldots\ my vocal folds look great'' (Participant C); ``I don't drink soda\ldots\ room temp [water], because cold isn't very good for the vocal cords'' (Participant G); ``I would throw my voice out\ldots\ I was doing it very wrong'' (Participant F). The theme aligns with H2: protection behaviors are described as learned skills rather than innate traits.
+Narratives emphasized hydration, warm-ups, dietary triggers, pacing on tour, and clinical reassurance after symptoms.
+Participant B framed hydration as a multi-day commitment before high-demand days; Participant C described clinical reassurance after imaging; Participant G avoided cold drinks for vocal comfort; Participant F recalled periods of misuse before learning safer coordination.
+Together, these accounts portray protection as \emph{learned stewardship} rather than a static trait, echoing laboratory evidence that extreme effects can be compatible with healthy phonation when coordination and load are managed \parencite{Aaen2024ExtremeVocalEffects,Guzman2018MetalSinging}.
 
 \subsubsection{Perception and intelligibility}
-Participants debated whether lyrics must be lexical-decodable for every listener, often linking intelligibility to rhythmic placement and songwriting intent. Examples: ``For me, people being able to understand what I'm doing is important'' (Participant C); ``Some people perceive yelling and screaming as negative---maybe from their upbringing'' (Participant B); ``Everything has to fit like a glove; otherwise we just got chaos'' (Participant A). These accounts frame harsh timbre as compatible with communicative intent when performers manage vowel shape and phrasing.
+Participants debated whether lyrics must be lexical-decodable for every listener, often linking intelligibility to rhythmic placement and songwriting intent rather than to ``diction'' alone.
+Participant C emphasized wanting listeners to grasp what is sung; Participant B speculated about how upbringing shapes reactions to yelling; Participant A tied intelligibility to overall musical fit.
+Listener-focused work similarly stresses that vocal-effect categories are not heard as undifferentiated noise and that expertise modulates identification \parencite{Pinto2023VocalEffects}.
+In our material, harsh timbre is repeatedly framed as compatible with communicative intent when vowel shaping, rhythm, and arrangement work together.
 
 \subsubsection{Melody and rhythm}
-Many participants rejected a melody-versus-chaos dichotomy, arguing that screamed lines still carry contour and temporal alignment with instruments. Examples: ``Melody or rhythm can help improve intelligibility---one hundred percent'' (Participant A); ``There's got to be a melody in there somewhere---you just have to find it'' (Participant B); ``A lot of djent songs\ldots\ the ostinato becomes the whole structure'' (Participant H). This complements the Stage~2 perceptual-class block by showing how performers reason about mid-level musical organization beneath timbral labels.
+Many participants rejected a melody-versus-chaos dichotomy, arguing that screamed lines still carry contour and temporal alignment with instruments.
+Participant A tied melody and rhythm to intelligibility; Participant B insisted that melody can be ``found'' even in harsh delivery; Participant H described rhythm-forward writing where ostinato carries structure.
+This complements the Stage~2 perceptual-class block: performers reason about mid-level musical organization beneath timbral labels, consistent with musicological and acoustic work that treats extreme vocals as analyzable structure rather than pure noise \parencite{Smialek2012Spectrographic,Tailleur2021AcousticSpace}.
 
 \subsubsection{Other (cross-cutting reflection)}
-Segments coded as ``Other'' often foregrounded emotion regulation, artistic ethos, and motivation. Examples: ``It's not just about sounding cool---you've got to have something to say'' (Participant F); ``Metal is the most expressive and organized way to express yourself'' (Participant D); ``I want people to feel the emotion and the meaning'' (Participant J). These metacommentary segments contextualize technique choices as ethically and aesthetically motivated.
+Segments coded as ``Other'' often foregrounded emotion regulation, artistic ethos, and motivation.
+Participant F tied harsh vocals to having ``something to say''; Participant D described metal as a structured expressive outlet; Participant J emphasized emotional transmission to an audience.
+These metacommentary segments contextualize technique choices as ethically and aesthetically motivated, connecting to literature on anger, identity, and reception in heavy music \parencite{Sharman2015AngerProcessing,Wallmark2018SoundOfEvil}.
 
 \subsubsection{Women in metal (scene positionality)}
-Although \(n\) is small at the segment level, the theme carried consistent content about legitimacy and double standards. Examples: ``Women are discouraged from having a prominent, loud voice'' (Participant G); ``It's a very challenging scene to tap into and not be seen as a gimmick'' (Participant P). These excerpts connect vocal identity to reception norms rather than to acoustics alone.
+Although \(n\) is small at the segment level, the theme carried consistent content about legitimacy and double standards.
+Participant G described gendered expectations around loudness; Participant P described pressures not to be reduced to a ``female-fronted'' billing.
+These excerpts connect vocal identity to reception norms rather than to acoustics alone, aligning with gender-focused analyses of metal performance and visibility \parencite{Herbst2017VoiceOfAnarchy}.
 
 \subsubsection{Historical perspective}
-Participants occasionally situated their practice within band-era histories and local scenes. Examples: ``Kiss gave me appreciation for theatrical bands. Then I found Slipknot---Linkin Park kind of got me into screaming'' (Participant B); ``My hometown had a local band with two front guys---that was my first time seeing a hardcore band'' (Participant P). This theme provides timeline anchors that contextualize vocabulary acquisition.
+Participants occasionally situated their practice within band-era histories and local scenes.
+Participant B linked theatrical rock to later metal entry points; Participant P recalled a formative local hardcore performance.
+This theme provides timeline anchors that contextualize vocabulary acquisition and help explain why certain band names recur as shared cultural shorthand.
 
-\subsubsection{Top-mentioned bands and vocalists (coded influences)}
-Table~\ref{tab:topbands} and Table~\ref{tab:topvox} summarize the most frequent explicit entries in \texttt{BAND\_INFLUENCE(\ldots)} and \texttt{VOCALIST\_INFLUENCE(\ldots)} tags across Stage~1 \texttt{Codes} fields. Counts are not exhaustive of every name spoken in interviews---only of segments where coders applied these tags. Some vocalist tags include non-metal artists when participants cited them as timbral or phrasing references.
+\subsubsection{Most-cited bands and vocalists under ``influence'' coding}
+Tables~\ref{tab:topbands} and~\ref{tab:topvox} show which band and vocalist names appeared most often in interview segments that coders marked as discussing musical influence.
+These lists are \emph{not} a full catalogue of every artist mentioned anywhere in the corpus; they count only passages where that theme was tagged.
+Among vocalists, a few names sit outside metal altogether---participants sometimes pointed to singers outside the scene for timbre, phrasing, or delivery---which underscores how ``influence'' is told through a broader listening biography than a single genre label.
 
 \begin{table}[ht]
 \centering
-\caption{Top 15 band-level influence tags in Stage 1 \texttt{Codes} (frequency of tagged mentions).}
+\caption{Fifteen most frequent band names in influence-tagged Stage~1 segments.}
 \label{tab:topbands}
 \begin{tabular}{lr}
 \toprule
@@ -237,7 +364,7 @@ Ratt & 1 \\
 
 \begin{table}[ht]
 \centering
-\caption{Top 15 vocalist-level influence tags in Stage 1 \texttt{Codes} (frequency of tagged mentions).}
+\caption{Fifteen most frequent vocalist names in influence-tagged Stage~1 segments.}
 \label{tab:topvox}
 \begin{tabular}{lr}
 \toprule
@@ -262,6 +389,40 @@ Dickie Allen & 1 \\
 \end{tabular}
 \end{table}
 
+\subsection{Cross-stage thematic coverage (Stage 2 open text)}
+Survey open-text fields were split into analyzable segments (minimum length 25 characters) and mapped to the same high-level \emph{theme} labels used in Stage~1, using stable Qualtrics question-ID rules (demographic and screening items are labeled \emph{Demographics} and analyzed separately from substantive codebook themes).
+Table~\ref{tab:crossstagethemes} juxtaposes segment counts: Stage~1 reflects manual (and partially assisted) segment coding; Stage~2 counts reflect automated segmentation volume and are driven by response length as well as by participation.
+They should be read as a coverage map, not as a claim that topics occur ``equally often'' across stages.
+Stage~2 adds substantial volume in background/taste and perception-adjacent prompts; the interview corpus uniquely contains a dedicated Melody \& Rhythm theme block, and Stage~2 uniquely contributes demographic text and a larger Women in Metal open-text block in this export.
+
+\begin{table}[ht]
+\centering
+\caption{Segment counts by theme: Stage 1 (interview) vs Stage 2 (Qualtrics open-text segments). Stage~2 primary codes are heuristic (see Methodology).}
+\label{tab:crossstagethemes}
+\small
+\begin{tabular}{lrrr}
+\toprule
+Theme & Stage 1 & Stage 2 & Total \\
+\midrule
+Musical Background & 177 & 371 & 548 \\
+Musical Taste \& Influence & 151 & 242 & 393 \\
+Perception \& Intelligibility & 125 & 207 & 332 \\
+Vocal Technique \& Style & 100 & 172 & 272 \\
+Other & 24 & 139 & 163 \\
+Demographics & --- & 124 & 124 \\
+Vocal Health & 77 & 46 & 123 \\
+Education & 97 & 25 & 122 \\
+Melody \& Rhythm & 46 & --- & 46 \\
+Historical Perspective & 5 & 39 & 44 \\
+Women in Metal & 8 & 34 & 42 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Separately, item-level coverage tables for Stage~2 show how many \emph{respondents} provided any non-empty text in each thematic block (e.g., Musical Background and Musical Taste blocks reached 52 respondents in the processed export), while the perceptual-class block Q43--Q46 carries the item-specific \(N\) values reported in Table~\ref{tab:stage2flow}.
+Together, these descriptors support a pragmatic view of Stage~2 usefulness: strong for breadth and for the dedicated perceptual-class instrument; thinner for some health and education prompts relative to interview depth, and uneven when sessions end early.
+
+\FloatBarrier
 \subsection{Stage 2: Perceptual-Class Block}
 \subsubsection{Q43 Agreement with Three-Class Framework}
 \begin{table}[ht]
@@ -286,22 +447,30 @@ Q44 (\(N=38\)) showed a clear directional pattern with non-trivial overlap:
 \begin{itemize}
     \item \textbf{Growl-leaning:} False Cord, low (32 growl-like), Guttural (30 growl-like).
     \item \textbf{Scream-leaning:} Fry, high (30 scream-like), Banshee scream (28 scream-like), Goblin scream (24 scream-like).
-    \item \textbf{Bridge/overlap region:} False Cord, mid (18/21/22 across scream/growl/hybrid), Fry, low (14/21/13), Hardcore scream/Shout (14/5/27).
+    \item \textbf{Bridge/overlap region:} False Cord, mid (18/21/22 across scream/growl/yell), Fry, low (14/21/13), Hardcore scream/Shout (14/5/27).
 \end{itemize}
 
 These data support RQ3 and H1: the classes are usable but gradient rather than mutually exclusive bins.
 
-\begin{figure}[ht]
+Importantly, Q44 was designed to allow \emph{multiple} class selections per technique row.
+That design matches the working hypothesis that a single production label can plausibly be heard or used under more than one perceptual class depending on register, intensity, vowel setting, and musical context---i.e., class membership is not assumed to be mutually exclusive at the level of individual techniques.
+The resulting pattern---strong poles (e.g., low false cord toward growl-like; high fry toward scream-like) alongside substantial co-endorsement in mid-register and bridging techniques---is therefore not an artifact of forced choice; it is the intended readout of multi-class (polythetic) structure.
+
+\begin{figure}[!htbp]
 \centering
 \includegraphics[width=\linewidth]{q44_heatmap.png}
-\caption{Technique-to-class mapping (Q44). Cell values count participants who assigned the row technique to the column class (multiple selections allowed; \(N=38\) participants with at least one Q44 row answered). Darker cells indicate higher endorsement frequency.}
+\caption{Technique-to-class mapping (Q44).
+Cell values count participants who assigned the row technique to the column class (multiple selections allowed; \(N=38\) participants with at least one Q44 row answered).
+Darker cells indicate higher endorsement frequency.}
 \label{fig:q44heat}
 \end{figure}
+\FloatBarrier
 
 Figure~\ref{fig:q44heat} mirrors Table~\ref{tab:stage2flow} coverage and visualizes the same counts exported in \texttt{q44\_mapping\_counts.csv}.
 
 \subsubsection{Q45 Qualitative Associations}
-In Q45 (\(N=33\) with all three fields completed), scream-like responses clustered around high-intensity affect (e.g., emotional, raw, aggressive), growl-like around heaviness/darkness imagery (e.g., demonic, brutal, animal metaphors), and hybrid/shout-like around mixed social-energy descriptors (e.g., gang-style, both, anger/sadness blends). The qualitative layer is consistent with Q44's overlap structure.
+In Q45 (\(N=33\) with all three fields completed), scream-like responses clustered around high-intensity affect (e.g., emotional, raw, aggressive), growl-like around heaviness/darkness imagery (e.g., demonic, brutal, animal metaphors), and hybrid/yell-like around mixed social-energy descriptors (e.g., gang-style, both, anger/sadness blends).
+The qualitative layer is consistent with Q44's overlap structure.
 
 \subsubsection{Q46 Everyday Use of Class-Language}
 \begin{table}[ht]
@@ -322,47 +491,93 @@ Rarely/Never & 13 & 32.5 \\
 Table~\ref{tab:q46} suggests that production-language still dominates routine self-monitoring, while perceptual classes function as a secondary but available framework.
 
 \subsection{What Stage 2 Adds Beyond Stage 1}
-Stage 2 extends the analytical frame in two ways. First, it operationalizes class-level judgments directly (Q43--Q46), allowing explicit estimation of agreement, overlap, and usage frequency. Second, it broadens topical coverage through survey open-text fields that capture additional performer reflection on communication goals, historical positioning, and social interpretation in a structured response environment. In this sense, Stage 1 and Stage 2 are complementary: interviews preserve narrative nuance, while survey structure enables reproducible class-mapping summaries.
+Stage 2 extends the analytical frame in two ways.
+First, it operationalizes class-level judgments directly (Q43--Q46), allowing explicit estimation of agreement, overlap, and usage frequency.
+Second, it broadens topical coverage through survey open-text fields that capture additional performer reflection on communication goals, historical positioning, and social interpretation in a structured response environment.
+Theme-aligned open-text segments (Table~\ref{tab:crossstagethemes}) show that, after fixing question-to-theme mapping in the processing pipeline, Stage~2 material overlaps substantively with Stage~1 domains---especially musical background/taste and technique---while the perceptual-class block provides the cleanest cross-respondent comparability.
+In this sense, Stage 1 and Stage 2 are complementary: interviews preserve narrative nuance, while survey structure enables reproducible class-mapping summaries and wider demographic spread (Table~\ref{tab:samplechar}), at the cost of shallower responses for some items.
 
 \paragraph{Illustrative Stage 2 open-text excerpts (de-identified).}
-Survey respondents sometimes articulated production logic in fine detail; for example, one wrote that fry and hardcore screams can share a ``base technique'' differentiated by tension and projection, while another described mapping tunnel screams, gutturals, and whistle-like highs as distinct tools for different sections. A third emphasized breath support and sustainable loudness across a set rather than isolated ``trick'' techniques. These excerpts align with Stage~1's gradient framing: performers reason with inventories of gestures, then situate them in musical and pragmatic context.
+Survey respondents sometimes articulated production logic in fine detail; for example, one wrote that fry and hardcore screams can share a ``base technique'' differentiated by tension and projection, while another described mapping tunnel screams, gutturals, and whistle-like highs as distinct tools for different sections.
+A third emphasized breath support and sustainable loudness across a set rather than isolated ``trick'' techniques.
+These excerpts align with Stage~1's gradient framing: performers reason with inventories of gestures, then situate them in musical and pragmatic context.
 
 \subsection{Cross-Stage Synthesis}
 Taken together, Stage 1 and Stage 2 show a coherent pattern:
 \begin{enumerate}
     \item performer discourse is production-rich and context-heavy (training, health, performance setting);
     \item broad perceptual grouping is largely interpretable and practically deployable when explicitly prompted;
-    \item overlap is a structural feature of the data, especially in mid-register and mixed-intent techniques.
+    \item overlap is a structural feature of the data---including, in Stage~2, explicit multi-class endorsement for several techniques---rather than an occasional coding slip.
 \end{enumerate}
 
 This supports H3: Stage 2 broadens thematic and interpretive coverage without replacing Stage 1's production-centered narrative core.
+It also sharpens the paper's central theoretical point: perceptual classes can remain useful even when production techniques do not behave like mutually exclusive bins.
 
 \section{Discussion}
-The principal contribution is methodological and conceptual: a staged design can preserve the granularity of performer language while testing a compact perceptual scaffold that is usable in broader communication. For voice-science and pedagogy audiences, this matters because teaching and assessment frequently move between concrete motor cues and listener-facing descriptors.
+\subsection*{Why this matters}
+The principal contribution is methodological and conceptual.
+A staged design can preserve the granularity of performer language while still testing whether a compact perceptual scaffold organizes practice in a way that many vocalists can recognize and use.
+For \emph{Journal of Voice} readers, the practical stakes are straightforward: clinicians, teachers, and researchers routinely translate between biomechanical description and what singers say in rehearsal rooms and studios \parencite{sadolin2000complete,sadolin2012effects}.
+If those translations ignore how performers actually bundle technique, health, and scene identity, communication fails even when the underlying physiology is well understood.
 
-The data do not support a rigid taxonomy in which each technique maps cleanly to a single class. Instead, they support a \emph{gradient model} with stable poles and porous boundaries. This is especially clear for mid-register and hybridized techniques, where context, intensity, and stylistic intent appear to shift perceived class-membership. This interpretation is consistent with listener-side findings that categories are detectable but not perfectly discrete, and with acoustically heterogeneous technique inventories in recent dataset work \parencite{Pinto2023VocalEffects,Tailleur2021AcousticSpace,tailleur2024emvddatasetdatasetextreme,Tailleur2024EMVD}.
+\subsection*{From techniques to classes: gradients and multi-class membership}
+The data do not support a rigid taxonomy in which each production technique maps to exactly one perceptual class.
+Instead, they support a \emph{gradient model} with stable poles and porous boundaries---and, in Q44, an explicit allowance for \emph{multiple class tags per technique}, consistent with the hypothesis that one technique can participate in more than one perceptual class depending on context.
+This is especially clear for mid-register and hybridized techniques, where context, intensity, and stylistic intent appear to shift perceived class membership.
 
-The health discourse in Stage 1 is also noteworthy. Participants repeatedly framed sustainability as an active practice (hydration timing, warm-up design, pacing, and load management), reinforcing current evidence that extreme effects are not inherently pathological when executed with control \parencite{Aaen2024ExtremeVocalEffects,Guzman2018MetalSinging,blomgren1998vocalfry}. At the same time, the interview material indicates that performers often learn this ``control'' through iterative experimentation before formalizing terminology, which helps explain why production-language remains central in Q46 despite broad comprehension of class labels.
+We emphasize this point because it can be misread from a checklist mindset: a perceptual ``class'' here is not assumed to function like a biological taxon with unique membership.
+It behaves more like a family resemblance structure in categorization research: cues overlap, and intermediate cases are expected \parencite{Navarro2010,Pinto2023VocalEffects,Anikin2025AcousticRoughness}.
+Accordingly, the Q44 heatmap should be interpreted as a map of \emph{endorsed affinities}, not as a forced partition.
 
-Finally, the social layer (including gendered scene experience) indicates that technique identity is not purely acoustic or physiological; it is also mediated by performance culture, audience expectation, and legitimacy narratives \parencite{Herbst2017VoiceOfAnarchy,Wallmark2018SoundOfEvil,Ribaldini2019Terminology}. This has practical implications for pedagogy and applied voice communication: terminologies that are technically precise but culturally tone-deaf may fail to translate into performer adoption.
+This interpretation is also consistent with listener-side findings that categories are detectable but not perfectly discrete, and with acoustically heterogeneous technique inventories in recent dataset work \parencite{Pinto2023VocalEffects,Tailleur2021AcousticSpace,tailleur2024emvddatasetdatasetextreme,Tailleur2024EMVD}.
+High-speed imaging likewise underscores multiple distortion regimes rather than a single ``extreme'' mechanism \parencite{Lee2025VocalDistortion}.
 
-From a methods perspective, the staged design also clarifies claim strength. We treat interview themes and survey mappings as convergent descriptive evidence rather than inferential causal proof. That stance is intentional and aligns with the goal of producing a robust performer-centered frame that can support future inferential and longitudinal work.
+\subsection*{Health, learning, and everyday vocabulary}
+The health discourse in Stage 1 is noteworthy because it is woven into learning narratives rather than presented as a separate ``safety appendix.''
+Participants repeatedly framed sustainability as an active practice (hydration timing, warm-up design, pacing, and load management), reinforcing current evidence that extreme effects are not inherently pathological when executed with control \parencite{Aaen2024ExtremeVocalEffects,Guzman2018MetalSinging,blomgren1998vocalfry}.
+At the same time, the interview material suggests that performers often learn this ``control'' through iterative experimentation before formalizing terminology, which helps explain why production-language remains central in Q46 despite broad comprehension of class labels.
+
+\subsection*{Scene, identity, and legitimacy}
+Finally, the social layer (including gendered scene experience) indicates that technique identity is not purely acoustic or physiological; it is also mediated by performance culture, audience expectation, and legitimacy narratives \parencite{Herbst2017VoiceOfAnarchy,Wallmark2018SoundOfEvil,Ribaldini2019Terminology}.
+This matters for applied communication: terminologies that are technically precise but culturally tone-deaf may fail to translate into performer adoption, even when they are biomechanically informative.
+
+\subsection*{Claims and next steps}
+From a methods perspective, the staged design clarifies claim strength.
+We treat interview themes and survey mappings as convergent descriptive evidence rather than inferential causal proof.
+That stance is intentional: the goal here is a robust performer-centered frame that can be extended later with acoustic measurement, listener tests, and reliability statistics for coding---the kinds of triangulation that voice science already uses to connect production, perception, and pedagogy \parencite{Aaen2024ExtremeVocalEffects,Pinto2023VocalEffects}.
 
 \section{Limitations}
-First, Stage 2 is a convenience sample with uneven item completion, and item-specific \(N\) varies substantially across Q43--Q46 and broader open-text blocks. Second, Stage 1 contains a documented assisted completion subset (76 rows), which improves coverage but should be interpreted as reproducible interim coding rather than final adjudicated consensus coding. Third, the manuscript focuses on descriptive interpretation rather than inferential testing; future work should report formal uncertainty and reliability metrics for both coding and class-assignment structures.
+First, Stage 2 is a convenience sample with uneven item completion, and item-specific \(N\) varies substantially across Q43--Q46 and broader open-text blocks.
+Second, Stage 1 contains a documented assisted completion subset (76 rows), which improves coverage but should be interpreted as reproducible interim coding rather than final adjudicated consensus coding.
+Third, Stage~2 open-text \emph{primary codes} are heuristic and should not be interpreted as manual codebook reliability; cross-stage comparisons emphasize thematic alignment and exemplar quotes, not numeric parity of code frequencies.
+Fourth, the manuscript focuses on descriptive interpretation rather than inferential testing; future work should report formal uncertainty and reliability metrics for both coding and class-assignment structures.
 
-Additional constraints include possible self-selection effects (participants already engaged with extreme-vocal discourse), language/context effects in open-text responses, and unavoidable mismatch between segment-level interview counts and respondent-level survey counts in cross-stage summaries. Word clouds are illustrative: token prominence depends on stopword settings and preprocessing and should not be read as a substitute for the codebook-driven theme counts in Table~\ref{tab:stage1themes}.
+Additional constraints include possible self-selection effects (participants already engaged with extreme-vocal discourse), language/context effects in open-text responses, and unavoidable mismatch between segment-level interview counts and respondent-level survey counts in cross-stage summaries.
+Recruitment via social-media metal communities and a metro-area flyer (Stage~1) further limits generalizability beyond reachable, voluntarily responding performers.
+Word clouds are illustrative: token prominence depends on stopword settings and preprocessing and should not be read as a substitute for the codebook-driven theme counts in Table~\ref{tab:stage1themes}.
 
 \section{Conclusion}
-This study presents a reproducible two-stage performer-centered analysis of extreme metal vocal practice. Stage 1 interview data demonstrate that technique, health, intelligibility, and musical identity are deeply interwoven in everyday reasoning. Stage 2 survey data show that a three-class perceptual scaffold is meaningful for most respondents, but technique-to-class mapping remains overlapping and gradient.
+This study presents a reproducible two-stage performer-centered analysis of extreme metal vocal practice.
+We see value in that reproducibility not as an end in itself, but because extreme vocals are often discussed either clinically (without performers' own categories) or anecdotally (without structured evidence): the repository and scripts are meant to make claims inspectable and revisable.
 
-Taken together, the findings support a practical taxonomy that is useful for communication across performer, pedagogical, and research contexts without overstating categorical rigidity. Future work should prioritize multi-coder reliability expansion, broader sampling across scenes, and tighter integration with acoustic feature-space modeling so that performer language, perceptual structure, and measurable signal properties can be linked more directly.
+Stage 1 interview data demonstrate that technique, health, intelligibility, and musical identity are deeply interwoven in everyday reasoning.
+Participants did not narrate ``technique'' as a list of isolated gestures; they described learning arcs, failure and repair, and the social and musical contexts in which a sound is worth using.
+
+Stage 2 survey data show that a three-class perceptual scaffold is meaningful for most respondents, but technique-to-class mapping remains overlapping and gradient.
+In particular, Q44's multi-select design and the resulting co-endorsement pattern support the paper's guiding idea: a single technique can be affiliated with more than one perceptual class, and classes are best treated as useful groupings rather than as mutually exclusive bins.
+
+Taken together, the findings support a practical taxonomy that is useful for communication across performer, pedagogical, and research contexts without overstating categorical rigidity.
+The point is not to replace production terminology, but to give researchers and teachers a bridge vocabulary that tracks how performers hear and justify sounds in real musical work \parencite{Ribaldini2019Terminology,sadolin2012effects}.
+
+Future work should prioritize multi-coder reliability expansion, broader sampling across scenes, and tighter integration with acoustic feature-space modeling so that performer language, perceptual structure, and measurable signal properties can be linked more directly \parencite{Tailleur2021AcousticSpace,tailleur2024emvddatasetdatasetextreme,Lee2025VocalDistortion,Pinto2023VocalEffects}.
 
 \section*{Funding}
-No external funding is declared for this manuscript draft.
+This research, including both study stages (interviews and the Qualtrics survey), was conducted without external funding.
 
 \section*{Data Availability}
-Public artifacts include de-identified processed datasets and reproducible scripts. Raw participant-linked materials remain restricted for ethical and privacy reasons.
+Public artifacts include de-identified processed datasets and reproducible analysis scripts.
+The project repository is available at \url{https://github.com/darrrgghh/what-do-we-actually-do-with-our-voices/tree/main}.
+Raw participant-linked materials remain restricted for ethical and privacy reasons.
 
 \section*{Declaration of Competing Interest}
 The authors declare no known competing financial interests or personal relationships that could have appeared to influence the work reported in this paper.
@@ -371,4 +586,3 @@ The authors declare no known competing financial interests or personal relations
 
 \printbibliography
 \end{document}
-
