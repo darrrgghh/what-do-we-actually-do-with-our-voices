@@ -1,19 +1,14 @@
 from __future__ import annotations
-
 from pathlib import Path
-
 import matplotlib.pyplot as plt
 import pandas as pd
 import seaborn as sns
-
 
 def main() -> None:
     root = Path(__file__).resolve().parents[2]
     fig_dir = root / "manuscript" / "figures"
     fig_dir.mkdir(parents=True, exist_ok=True)
-
     sns.set_theme(style="whitegrid", context="paper", font_scale=1.05)
-
     theme_path = root / "results" / "tables" / "stage1_theme_summary.csv"
     if not theme_path.exists():
         s1 = pd.read_csv(root / "data" / "processed" / "stage1_segments_18.csv")
@@ -37,7 +32,6 @@ def main() -> None:
     plt.tight_layout()
     plt.savefig(fig_dir / "stage1_themes_bar.png", dpi=300, bbox_inches="tight")
     plt.close()
-
     q44 = pd.read_csv(root / "results" / "tables" / "q44_mapping_counts.csv")
     pivot = q44.pivot(index="Technique", columns="Class", values="Count").fillna(0)
     for c in ["Scream-like", "Growl-like", "Hybrid/Yell-like"]:
@@ -58,7 +52,6 @@ def main() -> None:
     plt.tight_layout()
     plt.savefig(fig_dir / "q44_heatmap.png", dpi=300, bbox_inches="tight")
     plt.close()
-
     print("Wrote stage1_themes_bar.png and q44_heatmap.png")
 
 

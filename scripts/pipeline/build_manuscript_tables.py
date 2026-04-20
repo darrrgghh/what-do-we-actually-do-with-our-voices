@@ -30,7 +30,6 @@ def build_stage1_tables(root: Path) -> None:
 
 def build_stage2_tables(root: Path) -> None:
     df = pd.read_csv(root / "data" / "processed" / "qualtrics_deidentified.csv")
-
     flow_rows = [("Qualtrics rows in export", len(df))]
     flow_rows.append(
         (

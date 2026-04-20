@@ -106,13 +106,11 @@ def main() -> None:
 
     top_b = merge_counts(all_b).most_common(15)
     top_v = merge_counts(all_v).most_common(15)
-
     out = root / "results" / "tables"
     out.mkdir(parents=True, exist_ok=True)
     pd.DataFrame(top_b, columns=["Name", "Count"]).to_csv(out / "top15_bands.csv", index=False)
     pd.DataFrame(top_v, columns=["Name", "Count"]).to_csv(out / "top15_vocalists.csv", index=False)
     print("Wrote top15_bands.csv and top15_vocalists.csv")
-
 
 if __name__ == "__main__":
     main()

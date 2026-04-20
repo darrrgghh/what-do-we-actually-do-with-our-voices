@@ -10,7 +10,6 @@ def summarize_stage1(root: Path) -> None:
     seg = pd.read_csv(root / "data" / "processed" / "stage1_segments_18.csv")
     p = seg.drop_duplicates(subset=["Vocalist"]).copy()
     p.to_csv(root / "results" / "tables" / "stage1_participant_level.csv", index=False)
-
     age = pd.to_numeric(p["Age"], errors="coerce")
     exp = pd.to_numeric(p["Experience_months"], errors="coerce")
 
@@ -38,7 +37,6 @@ def _stage2_slice(df: pd.DataFrame, finished_only: bool) -> pd.DataFrame:
 
 def summarize_stage2(root: Path) -> None:
     q = pd.read_csv(root / "data" / "processed" / "qualtrics_deidentified.csv")
-
     out_rows: list[dict] = []
     for label, finished_only in [("all_rows", False), ("finished_only", True)]:
         sub = _stage2_slice(q, finished_only)

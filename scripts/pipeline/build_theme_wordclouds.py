@@ -9,7 +9,6 @@ from wordcloud import STOPWORDS, WordCloud
 # NOTE: wordcloud.STOPWORDS already covers many function words (a, the, is, was, were, …).
 
 EXTRA_STOP: set[str] = {
-    # Tokenizer / contraction debris (incl. possessive splits)
     "s",
     "d",
     "t",
@@ -532,13 +531,11 @@ TOKEN_RE = re.compile(r"\b[\w']+\b", re.UNICODE)
 
 def _normalize_apostrophes(s: str) -> str:
     return s.replace("\u2018", "'").replace("\u2019", "'").replace("\u201c", '"').replace("\u201d", '"')
-
 def _strip_possessive_suffix(token: str) -> str:
     t = token.lower()
     if t.endswith("'s"):
         t = t[:-2]
     return t
-
 
 def _filter_token(t: str, stop: set[str]) -> str | None:
     if not t:
@@ -558,7 +555,6 @@ def _filter_token(t: str, stop: set[str]) -> str | None:
     if raw[0].isdigit():
         return raw.lower()
     return t
-
 
 def preprocess_for_wordcloud(text: str, stop: set[str]) -> str:
     """Normalize punctuation, split possessives, drop stopwords, return space-joined tokens."""
@@ -612,7 +608,6 @@ def main() -> None:
 
     for p in fig_dir.glob("wordcloud_*.png"):
         p.unlink(missing_ok=True)
-
     df = pd.read_csv(root / "data" / "processed" / "stage1_segments_18.csv")
     standalone_w, standalone_h = 1400, 900
 
@@ -639,8 +634,6 @@ def main() -> None:
         make_cloud(_text_blob(df[df["Theme"] == theme]["Quote"], stop), fname)
         theme_jobs.append((str(theme), fname))
 
-    # Montage: 3 rows x 2 columns on one portrait-style page; regenerate clouds per
-    # panel so words stay sharp (no upscaling small raster PNGs).
     if len(theme_jobs) >= 6:
         montage_w, montage_h = 1250, 980
         fig, axes = plt.subplots(3, 2, figsize=(11.5, 14))
