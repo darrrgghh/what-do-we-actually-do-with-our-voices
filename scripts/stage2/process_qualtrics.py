@@ -1,9 +1,7 @@
 from __future__ import annotations
-
 import json
 import re
 from pathlib import Path
-
 import pandas as pd
 
 
@@ -23,10 +21,9 @@ IDENTIFIER_COLUMNS = {
     "UserLanguage",
 }
 
-# Map extracted Qualtrics Q-key (see extract_q_key) to Stage-1-aligned theme labels.
+# Map extracted Qualtrics Q-key 
 THEME_BY_Q_KEY: dict[str, str] = {
-    # Screening / demographics (do not mix with substantive interview themes in comparisons)
-    "Q1": "Demographics",
+    # Screening / demographics 
     "Q2": "Demographics",
     "Q3": "Demographics",
     "Q4": "Demographics",
@@ -203,17 +200,14 @@ def main() -> None:
     paths = load_paths(project_root)
     processed_dir = project_root / paths["processed_dir"]
     processed_dir.mkdir(parents=True, exist_ok=True)
-
     qualtrics_path = project_root / paths["qualtrics_input"]
     df = pd.read_csv(qualtrics_path, header=0, skiprows=[1, 2], encoding="utf-8")
     df.columns = [normalize(c) for c in df.columns]
-
     keep_cols = [c for c in df.columns if c not in IDENTIFIER_COLUMNS]
     deid = df[keep_cols].copy()
     deid.insert(0, "RespondentID", [f"QX_{i:03d}" for i in range(1, len(deid) + 1)])
     deid = normalize_perceptual_class_labels(deid)
     deid.to_csv(processed_dir / "qualtrics_deidentified.csv", index=False, encoding="utf-8")
-
     text_records = []
     for _, row in deid.iterrows():
         rid = row["RespondentID"]
@@ -246,7 +240,6 @@ def main() -> None:
 
     segments = pd.DataFrame(text_records).drop_duplicates()
     segments.to_csv(processed_dir / "stage2_text_segments.csv", index=False, encoding="utf-8")
-
     overview = pd.DataFrame(
         [
             {"metric": "qualtrics_rows_total", "value": len(df)},

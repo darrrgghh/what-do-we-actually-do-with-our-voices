@@ -1,11 +1,8 @@
 from __future__ import annotations
-
 import json
 import re
 from pathlib import Path
-
 import pandas as pd
-
 
 def load_paths(project_root: Path) -> dict:
     cfg_path = project_root / "config" / "project_paths.json"
@@ -123,7 +120,6 @@ def detect_codes(text: str, theme: str) -> list[str]:
 def extract_segments_from_qa(qa_path: Path, vocalist_id: str) -> pd.DataFrame:
     lines = qa_path.read_text(encoding="utf-8", errors="ignore").splitlines()
     metadata = parse_metadata(lines, vocalist_id)
-
     rows = []
     theme = None
     for ln in lines:
@@ -159,16 +155,13 @@ def extract_segments_from_qa(qa_path: Path, vocalist_id: str) -> pd.DataFrame:
 def main() -> None:
     project_root = Path(__file__).resolve().parents[2]
     paths = load_paths(project_root)
-
     segments_in = project_root / paths["stage1_segments_input"]
     codebook_in = project_root / paths["stage1_codebook_input"]
     qa_dir = project_root / paths["stage1_qa_folder"]
     processed_dir = project_root / paths["processed_dir"]
     codebook_out = project_root / paths["codebook_output"]
-
     processed_dir.mkdir(parents=True, exist_ok=True)
     codebook_out.parent.mkdir(parents=True, exist_ok=True)
-
     base = pd.read_csv(segments_in)
     base["CodingSource"] = "manual_existing"
     present = set(base["Vocalist"].dropna().astype(str).unique())
@@ -223,4 +216,3 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
-
